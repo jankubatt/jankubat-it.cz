@@ -1,0 +1,114 @@
+body {
+    font-family: 'Source Sans Regular';
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Source Sans Regular';
+    src: url('font/SourceSansPro-Regular.woff2') format('woff2'), url('font/SourceSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Light';
+    src: url('font/SourceSansPro-Light.woff2') format('woff2'), url('font/SourceSansPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@keyframes fade {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+/* Navbar */
+.navbar-text-light {
+    font-family: 'Source sans Light';
+}
+
+.navbar-brand {
+    font-size: 2.5em;
+}
+
+.nav-link {
+    font-size: 1.5em;
+}
+
+/* Header */
+#header {
+    margin-top: 15em;
+    animation-name: fade;
+    animation-duration: 4s;
+    margin-bottom: 15em;
+}
+
+.header {
+    margin-top: 15em;
+}
+
+
+.btn-header {
+    margin-top: 5em;
+}
+
+.header-h1 {
+    font-size: 3.5em;
+}
+
+.header-h2 {
+    font-family: 'Source sans Light';
+}
+
+/* Portfolio */
+#portfolio {
+    margin-top: 30em;
+}
+
+.portfolio-text {
+    font-family: 'Source sans Light';
+    font-size: 1.5em;
+    padding: 8em 5em 0em 5em;
+}
+
+.btn-portfolio {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+/* About */
+#about {
+    margin-top: 30em;
+}
+
+.about-text {
+    font-family: 'Source sans Light';
+    font-size: 1.5em;
+    padding: 1em 5em 0em 5em;
+}
+
+
+/* Footer */
+#footer {
+    font-family: 'Source sans Light';
+    margin-top: 15em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    color: white;
+    background-color: #343a40;
+}
+
+.fa-2x {
+    padding: 0px 5px 0px 5px;
+    color: white;
+}
+
+
+
+
+
+
+
