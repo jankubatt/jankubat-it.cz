@@ -91,6 +91,7 @@ body {
 #contact {
     margin-top: 37em;
     margin-bottom: 30em;
+    text-align: center;
 }
 
 .contact-text {
@@ -102,6 +103,8 @@ body {
 .contact-text-bottom {
     font-family: 'Source sans Light';
     font-size: 1.5em;
+    display: inline-block;
+    text-align: left;
 }
 
 /* Footer */
@@ -143,10 +146,6 @@ body {
         padding: 8em 5em 0em 5em;
     }
   }
-
-
-
-
 
 
 
