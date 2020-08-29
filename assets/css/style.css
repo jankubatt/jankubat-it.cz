@@ -45,11 +45,6 @@ body {
     margin-bottom: 25em;
 }
 
-.header {
-    margin-top: 15em;
-}
-
-
 .btn-header {
     margin-top: 5em;
 }
@@ -107,7 +102,6 @@ body {
 .contact-text-bottom {
     font-family: 'Source sans Light';
     font-size: 1.5em;
-    padding: 0em 0em 0em 10em;
 }
 
 /* Footer */
@@ -124,6 +118,31 @@ body {
     padding: 0px 5px 0px 5px;
     color: white;
 }
+
+@media screen and (max-width: 700px) {
+    .contact-text {
+        font-family: 'Source sans Light';
+        font-size: 1em;
+        padding: 0em 5em 0em 5em;
+    }
+    
+    .contact-text-bottom {
+        font-family: 'Source sans Light';
+        font-size: 1em;
+    }
+
+    .about-text {
+        font-family: 'Source sans Light';
+        font-size: 1em;
+        padding: 1em 5em 0em 5em;
+    }
+
+    .portfolio-text {
+        font-family: 'Source sans Light';
+        font-size: 1em;
+        padding: 8em 5em 0em 5em;
+    }
+  }
 
 
 
