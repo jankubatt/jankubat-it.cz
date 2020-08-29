@@ -42,7 +42,7 @@ body {
     margin-top: 15em;
     animation-name: fade;
     animation-duration: 4s;
-    margin-bottom: 15em;
+    margin-bottom: 25em;
 }
 
 .header {
@@ -64,7 +64,8 @@ body {
 
 /* Portfolio */
 #portfolio {
-    margin-top: 30em;
+    margin-top: 40em;
+    margin-bottom: 10em;
 }
 
 .portfolio-text {
@@ -81,7 +82,8 @@ body {
 
 /* About */
 #about {
-    margin-top: 30em;
+    margin-top: 33em;
+    margin-bottom: 10em;
 }
 
 .about-text {
@@ -90,6 +92,23 @@ body {
     padding: 1em 5em 0em 5em;
 }
 
+/* Contact */
+#contact {
+    margin-top: 37em;
+    margin-bottom: 30em;
+}
+
+.contact-text {
+    font-family: 'Source sans Light';
+    font-size: 2em;
+    padding: 0em 5em 0em 5em;
+}
+
+.contact-text-bottom {
+    font-family: 'Source sans Light';
+    font-size: 1.5em;
+    padding: 0em 0em 0em 10em;
+}
 
 /* Footer */
 #footer {

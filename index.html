@@ -22,6 +22,7 @@ COPYRIGHT Jan Kubat 2020
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" rel="javascript">
   <link href="assets/images/brand.png" rel="icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/848da1e5f7.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -33,7 +34,7 @@ COPYRIGHT Jan Kubat 2020
           var hash = this.hash;
           $('html, body').animate({
             scrollTop: $(hash).offset().top
-          }, 2000, function () {
+          }, 1200, function () {
             window.location.hash = hash;
           });
         } 
@@ -45,7 +46,7 @@ COPYRIGHT Jan Kubat 2020
 <body>
   <!--Navbar-->
   <section id="navbar">
-    <div class="navbar navbar-expand-lg">
+    <div class="navbar fixed-top navbar-expand-lg">
       <h3 class="navbar-brand">Jan Kubat</h3>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -59,12 +60,14 @@ COPYRIGHT Jan Kubat 2020
             <a class="nav-link text-dark" href="#portoflioJquery">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#about">About me</a>
+            <a class="nav-link text-dark" href="#aboutJquery">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#contactJquery">Contact</a>
           </li>
       </div>
     </div>
   </section>
-
 
   <!--Header-->
   <section id="header" class="text-center">
@@ -77,7 +80,7 @@ COPYRIGHT Jan Kubat 2020
   <a id="portoflioJquery"></a>
 
   <!--Portfolio-->
-  <section id="portfolio">
+  <section id="portfolio" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
     <div class="row text-center">
       <div class="col-md-6">
         <p class="portfolio-text">Almost all of my projects are on my GitHub page. So if you want to see my projects, go
@@ -93,8 +96,10 @@ COPYRIGHT Jan Kubat 2020
     </div>
   </section>
 
+  <a id="aboutJquery"></a>
+
   <!--About Me-->
-  <section id="about">
+  <section id="about" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
     <div class="row text-center">
       <div class="col-md-6" align="center">
         <img class="img-fluid" src="assets/images/czechia.png" alt="czechia.png">
@@ -111,27 +116,33 @@ COPYRIGHT Jan Kubat 2020
     </div>
   </section>
 
-  <!--Footer-->
-  <section id="footer">
+  <a id="contactJquery"></a>
+
+  <!--Contact-->
+  <section id="contact" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="150" data-aos-offset="0">
     <div class="row text-center">
-      <div class="col-md-4 contact">
-        <h1>Contact Me</h1>
-        <h4>jankubat77@gmail.com</h4>
+      <div class="col-md-6">
+        <p class="contact-text">Are you interested? Don't hesitate and contact me! We can discuss tech and work together.</p>
       </div>
-
-      <div class="col-md-4 socials">
-        <h1>Stuff</h1>
-        <a href="https://instagram.com/honzakubat" target="blank_"><i class="fab fa-instagram fa-2x"></i></a>
-        <a><i class="fas fa-book fa-2x"></i></a>
-        <a href="https://github.com/jankubatt/" target="blank_"><i class="fab fa-github fa-2x"></i></a>
-      </div>
-
-      <div class="col-md-4 copy">
-        <h1>&copy; Jan Kubat 2020</h1>
+      <div class="col-md-6 contact-text-bottom text-left" align="center">
+        <i class="far fa-envelope"></i> jankubat77@gmail.com<br>
+        <i class="fab fa-linkedin"></i> Jan Kubat<br>
+        <i class="fab fa-discord"></i> Tarvous#8839
       </div>
     </div>
   </section>
 
+  <!--Footer-->
+  <section id="footer">
+    <div class="row text-center">
+      <div class="col">
+        <p>&copy; Jan Kubat 2020</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 
 </html>
