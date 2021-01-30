@@ -57,23 +57,11 @@ body {
     font-family: 'Source sans Light';
 }
 
-/* Portfolio */
-#portfolio {
+/* projects */
+#projects {
     margin-top: 40em;
     margin-bottom: 10em;
 }
-
-.portfolio-text {
-    font-family: 'Source sans Light';
-    font-size: 1.5em;
-    padding: 8em 5em 0em 5em;
-}
-
-.btn-portfolio {
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
 
 /* About */
 #about {
@@ -138,12 +126,6 @@ body {
         font-family: 'Source sans Light';
         font-size: 1em;
         padding: 1em 5em 0em 5em;
-    }
-
-    .portfolio-text {
-        font-family: 'Source sans Light';
-        font-size: 1em;
-        padding: 8em 5em 0em 5em;
     }
   }
 
