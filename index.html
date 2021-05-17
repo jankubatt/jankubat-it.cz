@@ -228,14 +228,10 @@ COPYRIGHT Jan Kubat 2020
 			});
 		});
 	
-		$.getJSON("https://api.ipify.org?format=json", function(ipify) {
-			$.getJSON(`http://ip-api.com/json/${ipify.ip}`, function(data) {
-				console.log(data);
-
-				if (data.country == "Czechia") {
-					window.location.replace("./index_cz.html");
-				}
-			})
+		$.getJSON("https://geo.ipify.org/api/v1?apiKey=at_5hNQ4Gjv5vH77KEL0pwd2eT3y3aNI", function(data) {
+			if (data.location.country == "CZ") {
+				window.location.replace("./index_cz.html");
+			}
         });
 	</script>
 </body>
