@@ -1,0 +1,47 @@
+@font-face { font-family: Annie; src: url('AnnieUseYourTelescope-Regular.ttf'); } 
+
+body {
+    background-color: rgb(201, 175, 144);
+    border: none;
+    font-family: 'Annie', cursive;
+    font-weight: 700;
+}
+
+#headerName {
+    font-size: 3em;
+}
+
+#headerBook {
+    font-size: 5em;
+}
+
+.card {
+    background-color: rgb(228, 200, 167);
+    font-weight: 700;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+.book-desc {
+    font-size: larger;
+    font-weight: 700;
+}
+
+.container > p {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.container > h1 {
+    font-size: 50px;
+}
+
+.container > h2 {
+    font-size: 40px;
+}
+
+.striped-line { border: 2px dashed rgb(77, 77, 77); margin: auto; margin-top: 5%; margin-bottom: 5%; }
