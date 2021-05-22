@@ -30,5 +30,7 @@ $(document).ready(function () {
         console.log("k");
         window.location.replace("../cz/")
     })
+    
+   
   });
 

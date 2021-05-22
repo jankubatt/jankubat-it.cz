@@ -19,7 +19,7 @@ $(".dropdown").on("click", function() {
 });
 
 $.getJSON("https://geo.ipify.org/api/v1?apiKey=at_5hNQ4Gjv5vH77KEL0pwd2eT3y3aNI", function(data) {
-	if (data.location.country == "CZ" && clicked == null) {
-		window.location.replace("./cz");
+	if (data.location.country != "CZ" && clicked == null) {
+		window.location.replace("./en");
 	}
 });
