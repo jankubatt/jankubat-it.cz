@@ -25,12 +25,5 @@ $(document).ready(function () {
     $('[data-toggle="offcanvas"]').click(function () {
           $('#wrapper').toggleClass('toggled');
     });  
-
-    $("#zpet").on("click", function() {
-        console.log("k");
-        window.location.replace("../cz/")
-    })
-    
-   
   });
 

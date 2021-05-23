@@ -1,0 +1,120 @@
+<!--
+jankubat-it.cz
+Author: Jan Kubat
+Description: My minimalist personal web
+Dev start: 26/08/2020
+COPYRIGHT Jan Kubat 2020
+-->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Jan Kubat - Blog</title>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Blog of Jan Kubat">
+	<meta name="keywords" content="Jan Kubat, portfolio, github">
+	<meta name="author" content="Jan Kubat">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../assets/images/brand.png" rel="icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <!-- Twitter Card data -->
+	<meta name="twitter:card" content="Jan Kubat - Portfolio, Developer a bůh seberozvoje">
+	<meta name="twitter:site" content="@jankubatt">
+	<meta name="twitter:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘">
+	<meta name="twitter:description" content="Moje osobní portfolio s projekty, nápady a názory">
+	<meta name="twitter:creator" content="@jankubatt">
+	<!-- Twitter Summary card images must be at least 120x120px -->
+	<meta name="twitter:image" content="https://jankubat-it.cz/assets/og/ogblog.jpg">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="./index.html" />
+	<meta property="og:image" content="https://jankubat-it.cz/assets/og/ogblog.jpg" />
+	<meta property="og:description" content="Moje osobní portfolio s projekty, nápady a názory" />
+	<meta property="og:site_name" content="jankubat-it.cz" />
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SEVYR9W773"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-SEVYR9W773');
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+	    <div class="overlay"></div>
+
+	    <!-- Sidebar -->
+	    <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+	        <ul class="nav sidebar-nav">
+	            <div class="sidebar-header">
+	                <div class="sidebar-brand">
+	                    <a href="#">Jan Kubát</a>
+	                </div>
+	            </div>
+				<div class="sidebar-list">
+					<a href="../"><div>README.md</div></a>
+	            	<a href="./"><div>Projekty</div></a>
+	            	<a href="../knihy/"><div>Knihy</div></a>
+	            	<a href="../"><div>Zpět</div></a>
+				</div>
+	            <p class="monoscape p-2">Momentálně toto je ve výrobě :P tak počkej</p>
+	        </ul>
+	    </nav>
+	    <div id="page-content-wrapper">
+	        <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+	            <span class="hamb-top"></span>
+	            <span class="hamb-middle"></span>
+	            <span class="hamb-bottom"></span>
+	        </button>
+
+	        <div class="container">
+	            <div class="row">
+	                <div class="container">
+                        <div class="card mb-3">
+						  	<div class="row g-0">
+						    	<div class="col-md-4">
+						      		<img src="../../assets/images/kcs.png" alt="kcs_image" class="img-fluid">
+						    	</div>
+						    	<div class="col-md-8">
+						      		<div class="card-body">
+						      			<small class="text-muted card-text d-inline float-right">JQuery, PHP, MariaDB</small>
+								        <h5 class="card-title d-inline">Kopce Českého Středohoří</h5>
+								        <p class="card-text">
+								        	Interaktivní mapa s kopci Českého Středohoří. Můžete hledat kopce, zaškrtávat si kopce jako splněný a zobrazovat je hezkou geometrií.
+								        </p>
+								        <a href="./kopce-ceskeho-stredohori/" class="btn btn-outline-dark">K projektu</a>
+								        <p class="card-text date"><small class="text-muted float-right">05/21</small></p>
+						      		</div>
+						    	</div>
+						  	</div>
+						</div>
+	                </div>
+	            </div>
+	        </div>
+
+
+	    </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://kit.fontawesome.com/848da1e5f7.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="../js/index.js"></script>
+    <script src="../js/title-scroll.js"></script>
+</body>
+
+</html>

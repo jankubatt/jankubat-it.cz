@@ -19,8 +19,8 @@ COPYRIGHT Jan Kubat 2020
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-	<link href="../assets/images/brand.png" rel="icon">
-    <link rel="stylesheet" href="./css/style.css">
+	<link href="../../../assets/images/brand.png" rel="icon">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
@@ -66,9 +66,9 @@ COPYRIGHT Jan Kubat 2020
 	                </div>
 	            </div>
 				<div class="sidebar-list">
-					<a href="./"><div>README.md</div></a>
-	            	<a href="./projekty/"><div>Projekty</div></a>
-	            	<a href="./knihy/"><div>Knihy</div></a>
+					<a href="../../"><div>README.md</div></a>
+	            	<a href="../"><div>Projekty</div></a>
+	            	<a href="../../knihy/"><div>Knihy</div></a>
 	            	<a href="../"><div>Zpět</div></a>
 				</div>
 	            <p class="monoscape p-2">Momentálně toto je ve výrobě :P tak počkej</p>
@@ -80,69 +80,53 @@ COPYRIGHT Jan Kubat 2020
 	            <span class="hamb-middle"></span>
 	            <span class="hamb-bottom"></span>
 	        </button>
+
 	        <div class="container">
 	            <div class="row">
-	                <div class="col-lg-8 col-lg-offset-2 border border-dark monoscape">
+	                <div class="col-lg-8 col-lg-offset-2 border border-dark monoscape mb-5">
                         <ul class="list-inline">
-                            <li class="list-inline-item"><h1>README.md</h1></li>
+                            <li class="list-inline-item"><h1>Kopce Českého Středohoří</h1></li>
                             <li class="list-inline-item float-right">
                                 <figcaption class="blockquote-footer float-right">
-                                    2021/05/22
+                                    2021/05/23
                                 </figcaption>
                             </li>
                           </ul>
 	                    <hr>
 	                    <div class="intro">
 	                        <p>
-	                            Založil jsem toto, abych mohl ventilovat moje <mark>myšlenky, projekty, nápady,...</mark>
-	                            Nečekej ode mě nějakou češtinu, která je <strong>správně</strong>. Si tu budu psát jak <u>chci</u>.
+	                            Tento projekt jsem vytvořil, jelikož <b>ve volném čase chodím rád ven</b>. A nejradši po kopcích.
+	                            <mark>České Středohoří</mark> je nádherné, a proto jsem se rozhodl pro tuto oblast.
 	                        </p>
 	                        <p>
-	                            První myšlenka na to si založit vlastní "blog" mě napadla, když jsem jen tak
-	                            přemýšlel nad tím, kam shrnout moje <mark>nápady, názory,
-                                    psaní o knihách, projekty, you name it</mark>. Ale moc se mi nelíbí slovo <strong>BLOG</strong>.
-	                            Spíš takový centrum myšlenek a věcí, co bych chtěl sdílet.
-	                            Napadlo mě: <mark>„Co sociální sítě?"</mark>. Ale líbíla se mi představa čistého bílého
-	                            papíru, kam si můžu psát co <u>chci</u>.
+	                            První záminkou bylo vytvořit <u>interaktivní mapu</u>, kde si budu zaškrtávat kopce, na kterých jsem byl. To jsem stvořil celkem rychle a tak jsem začal přidávat různé funkce. Vytvořil jsem celkem velkou <b>databázi</b> kopců s jejich informacema <mark>(poloha, výška, prominence, izolace, hornina, povodí atd.)</mark>. Takže přibyla funkce, kde po kliknutí kopce vidíš i různé informace o kopci. 
 	                        </p>
 	                        <p>
-	                            Pokud tohle čteš, je velká šance, že jsme <mark>podobný člověk</mark>.
-	                            Proto tě tu chci rád uvítat. A rozhodně ti hned teď doporučuju, začni si
-	                            psát nějaký <strong>poznámky, svoje myšlenky</strong>.
-	                            Urovná se ti to potom v hlavě. A brzy určitě budeš mít nutkání, něco vzkázat
-	                            lidu taky :D
+	                            Každý asi víme, jako programátoři, že <mark>když nevíme co vytvořit za projekt, tak je to pech</mark>. Tak jsem se tak plácal v editoru a upravoval kód, aby vypadal dobře a aby byl <u>efektivní</u> (Což se mi asi moc nepovedlo). A v tu ránu mě to napadlo. Uživatel by rozhodně uvítal funkci, která by <b>zobrazila areu, kterou tvoří již pokořené kopce</b>. A tak jsem začal hledat. Naštěstí api.mapy.cz nabízí geometrické funkce jako <u>čáry a polygony</u>. Teď jenom zbývalo zjistit, jak mám k sakru vybrat body, které jsou více méně border všech bodů. K tomu mi pomohl <mark>Convex Hull</mark> algoritmus. Vím, není to ideální, ale funkci to plní hezky, takže ticho ju.
 	                        </p>
 	                        <p>
-	                            Jo! Málem bych se zapomněl představit. <mark>Já jsem Honza</mark>. Jsem normální
-	                            cysgender heterosexuální bílý negramot a kulturní barbar.
-	                            Věk asi nemá cenu psát, ale dejme tomu,
-	                            že jsem se narodil kolem roku <strong>2000</strong>. Momentálně to píšu u konce
-	                            <mark>Covid karantény 2021</mark> snad. Karanténa mi dala hodně času, takže mimo mé aktuální
-	                            hobby a práci <u>programování</u>, které jsem měl už předtím
-	                            jsem adaptoval další. Proto si ze srandy říkám <strong>self-development</strong> god :D
-	                            jelikož se to týká tohoto tématu.
+	                            Jako poslední funkci, co jsem přidal je <mark>vyhledávání</mark>. Protože koho by bavilo hledat kopec na mapě <b>manuálně</b> žejo. Vyhledávání nebyl až tak velký problém jak jsem si myslel. Napsal jsem script, který to řeší celkem dobře. <mark>Na našeptávání jsem si pomohl JQuery UI knihovnou</mark>, kde je autocomplete. Největší problém byly asi české znaky :D naštěstí s tím kolegové a kolegyně z JQuery UI počítali a vytvořili <u>mapování chrakterů</u>. Takže minimální potíž. 
 	                        </p>
 	                        <p>
-	                            Což znamená starat se o svoje <mark>mentální i fyzické zdraví</mark>. O svoje schopnosti
-	                            co se týče akademických, sociálních, nebo jenom must have
-	                            schopností. A obecně žít <mark>spokojený život</mark> z mého pohledu. Rozhodně jsem o tom
-	                            napsal <strong>článek</strong> později, tak se můžeš mrknout.
+	                            Jestli tě můj projekt zaujal, tak se na něj můžeš podívat live na této adrese: <a href="http://kopceceskehostredohori.jednoduse.cz/">http://kopceceskehostredohori.jednoduse.cz/</a> Budu rád, když si to vyzkoušíš, pokud se ti nechce dělat účet, tak <b>jsem vytvořil účet test:test</b>. Projekt <mark>rozhodně není u konce</mark>, tak neváhej a testuj :P
 	                        </p>
-	                        <figcaption id="figcaption" class="blockquote-footer float-right">
+	                        <small class="text-muted d-inline float-left"><a class="text-muted" href="mailto:jankubat77@gmail.com?subject=Kopce%20%C4%8Cesk%C3%A9ho%20St%C5%99edoho%C5%99%C3%AD%20-%20Feedback">jankubat77@gmail.com</a></small>
+	                        <figcaption id="figcaption" class="blockquote-footer d-inline float-right">
 	                            Jan Kubát 2021
 	                        </figcaption>
 	                    </div>
 	                </div>
 	            </div>
 	        </div>
+
 	    </div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://kit.fontawesome.com/848da1e5f7.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script src="./js/index.js"></script>
-    <script src="./js/title-scroll.js"></script>
+	<script src="../../js/index.js"></script>
+    <script src="../../js/title-scroll.js"></script>
 </body>
 
 </html>

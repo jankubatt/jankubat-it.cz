@@ -2,14 +2,35 @@ body {
     position: relative;
     overflow-x: hidden;
     background-color: #FFF;
+    font-family: 'Cutive Mono', monospace;
 }
 
 .intro {
     font-size: 1.05em;
 }
 
-.monoscape {
-    font-family: 'Cutive Mono', monospace;
+* {
+  cursor: url('../../assets/images/cursor.png'), auto !important;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
 }
 
 body,
@@ -36,10 +57,8 @@ html { height: 100%;}
 
 #sidebar-wrapper {
     z-index: 1000;
-    left: 220px;
     width: 0;
     height: 100%;
-    margin-left: -220px;
     overflow-y: auto;
     overflow-x: hidden;
     background: #EEE;
@@ -83,26 +102,28 @@ html { height: 100%;}
     list-style: none;
 }
 
-.sidebar-nav li {
-    position: relative; 
-    line-height: 20px;
-    display: inline-block;
-    width: 100%;
+.sidebar-list {
+  text-align: center;
+  color: #292b2c;
+  text-decoration: none;
 }
 
-.sidebar-nav li:hover{
-  background: #292b2c !important;
-}
-.sidebar-nav li:hover:before,
-.sidebar-nav li.open:hover:before {
-    width: 100%;
-    -webkit-transition: width .2s ease-in;
-      -moz-transition:  width .2s ease-in;
-       -ms-transition:  width .2s ease-in;
-            transition: width .2s ease-in;
-
+.sidebar-list div {
+  border: 1px solid #292b2c;
+  width: 210px;
+  margin: 5px;
 }
 
+.sidebar-list div:hover {
+  color: white;
+  background-color: #292b2c;
+}
+
+.sidebar-list a{
+  text-align: center;
+  color: #292b2c;
+  text-decoration: none;
+}
 
 .sidebar-header {
     text-align: center;
@@ -113,10 +134,10 @@ html { height: 100%;}
 }
 
 .sidebar-brand a {
-    color: #000;
+    color: #292b2c;
 }
 .sidebar-brand a:hover {
-    color: #000;
+    color: #292b2c;
     text-decoration: none;
 }
 .dropdown-header {
@@ -252,4 +273,20 @@ html { height: 100%;}
   display: block;
   -webkit-transform: translate3d(-100px,0,0);
   -webkit-transition: all .35s ease-in-out;
+}
+
+.card {
+  border-radius: 0 !important;
+  border-color: black !important;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+}
+
+.date {
+  position:absolute;
+  bottom:0;
+  right: 20px;
 }
