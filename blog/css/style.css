@@ -281,8 +281,8 @@ html { height: 100%;}
 }
 
 .card img {
-  height: 100%;
-  width: 100%;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .date {
