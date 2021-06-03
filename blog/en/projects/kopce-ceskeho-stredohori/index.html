@@ -1,0 +1,106 @@
+<!--
+jankubat-it.cz
+Author: Jan Kubat
+Description: My minimalist personal web
+Dev start: 26/08/2020
+COPYRIGHT Jan Kubat 2020
+-->
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+	<title>Jan Kubat - Blog</title>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Blog of Jan Kubat">
+	<meta name="keywords" content="Jan Kubat, portfolio, github">
+	<meta name="author" content="Jan Kubat">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../../assets/images/brand.png" rel="icon">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <!-- Twitter Card data -->
+	<meta name="twitter:card" content="Jan Kubat - Portfolio, Developer a bůh seberozvoje">
+	<meta name="twitter:site" content="@jankubatt">
+	<meta name="twitter:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘">
+	<meta name="twitter:description" content="Moje osobní portfolio s projekty, nápady a názory">
+	<meta name="twitter:creator" content="@jankubatt">
+	<!-- Twitter Summary card images must be at least 120x120px -->
+	<meta name="twitter:image" content="https://jankubat-it.cz/assets/og/ogblog.jpg">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="./index.html" />
+	<meta property="og:image" content="https://jankubat-it.cz/assets/og/ogblog.jpg" />
+	<meta property="og:description" content="Moje osobní portfolio s projekty, nápady a názory" />
+	<meta property="og:site_name" content="jankubat-it.cz" />
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SEVYR9W773"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-SEVYR9W773');
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+	        <div class="container mt-2">
+	            <div class="row">
+	                <div class="col-lg-8 col-lg-offset-2 border border-dark monoscape mb-5">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><h1>Kopce Českého Středohoří</h1></li>
+                            <li class="list-inline-item float-right">
+                                <p class="blockquote-footer float-right">
+                                    2021/05/23
+                                </p>
+                            </li>
+                          </ul>
+	                    <hr>
+	                    <div class="intro">
+	                        <p>
+								I created this project because <b> I like to go out in my free time </b>. And preferably on the hills.
+								<mark> České Středohoří </mark> is beautiful, so I decided on this area.
+							</p>
+							<p>
+								The first idea was to create an <u> interactive map </u> where I would check the hills I was on. I created this quite quickly, so I started adding various features. I created a fairly large <b> database </b> of hills with their <mark> information (location, height, prominence, isolation, material, basin, etc.) </mark>. So a feature has been added where you can click on a hill to see various information about the hill.
+							</p>
+							<p>
+								Everyone probably knows, as programmers, that <mark> if we don't know what to create for a project, it's bad </mark>. So I wondered in the editor and modified the code to look good and be <u> effective </u> (Which I probably didn't do very well). And it occurred to me that morning. The user would definitely welcome a feature that would <b> display the area of already-conquered hills </b>. So I started looking. Fortunately, api.mapy.cz offers geometric functions such as <u> lines and polygons </u>. Now all that remained was to find out how the hell to choose points that are more or less the border of all points. The <mark> Convex Hull </mark> algorithm helped me with this. I know it's not perfect, but it performs nicely, so shut up.
+							</p>
+							<p>
+								The last feature I added is <mark> search </mark>. Because who would love to look for a hill on the map <b> manually </b>. Searching wasn't as big a problem as I thought. I wrote a script that solves it quite well. <mark> For whisps I used JQuery UI library </mark>, where autocomplete is included. The biggest problem was probably the Czech characters :D, fortunately, colleagues from JQuery UI took this into account and created <u> character mapping </u>. So minimal hassle.
+							</p>
+							<p>
+								If you are interested in my project, you can watch it live at this address: <a href="http://kopceceskehostredohori.jednoduse.cz/"> http://kopceceskehostredohori.jednoduse.cz/ </a> I will be happy If you try it, if you don't want to make an account, <b> I've created a test:test account </b>. The <mark> project is definitely not over </mark>, so don't hesitate and test :P
+							</p>
+	                        <small class="text-muted d-inline float-left"><a class="text-muted" href="mailto:jankubat77@gmail.com?subject=Kopce%20%C4%8Cesk%C3%A9ho%20St%C5%99edoho%C5%99%C3%AD%20-%20Feedback">jankubat77@gmail.com</a></small>
+	                        <p id="figcaption" class="blockquote-footer d-inline float-right">
+	                            Jan Kubát 2021
+	                        </p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+
+	    </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://kit.fontawesome.com/848da1e5f7.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="../../../js/index.js"></script>
+    <script src="../../../js/title-scroll.js"></script>
+</body>
+
+</html>
