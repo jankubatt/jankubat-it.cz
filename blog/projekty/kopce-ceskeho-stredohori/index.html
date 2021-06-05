@@ -8,124 +8,133 @@ COPYRIGHT Jan Kubat 2020
 <!DOCTYPE html>
 
 <html lang="cs">
+	<head>
+		<title>𝙹𝚊𝚗 𝙺𝚞𝚋á𝚝 | 𝙿𝚛𝚘𝚓𝚎𝚔𝚝𝚢</title>
 
-<head>
-	<title>Jan Kubat - Blog</title>
+		<meta charset="UTF-8">
 
-	<meta charset="UTF-8">
-	<meta name="description" content="Blog of Jan Kubat">
-	<meta name="keywords" content="Jan Kubat, portfolio, github">
-	<meta name="author" content="Jan Kubat">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 | 𝙿𝚛𝚘𝚓𝚎𝚔𝚝𝚢">
+		<meta name="description" content="Čau! Moje technické portfolio. Momentálně studuji IT a počítačové sítě. Programování je moje hobby i moje práce. Programuji od roku 2017. Mám rád organizovanou a kvalitní práci.">
+		<meta name="keywords" content="Jan Kubat, portfolio, github, Honza Kubat, developer, programovani, blog, kubat jan, kubat honza">
+		<meta name="author" content="Jan Kubat">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="index, follow">
 
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-	<link href="../../../assets/images/brand.png" rel="icon">
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://jankubat-it.cz/blog/projekty/kopce-ceskeho-stredohori">
+		<meta property="og:site_name" content="jankubat-it.cz">
+		<meta property="og:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 | 𝙿𝚛𝚘𝚓𝚎𝚔𝚝𝚢">
+		<meta property="og:description" content="Čau! Moje technické portfolio. Momentálně studuji IT a počítačové sítě. Programování je moje hobby i moje práce. Programuji od roku 2017. Mám rád organizovanou a kvalitní práci.">
+		<meta property="og:image" content="https://jankubat-it.cz/assets/og/ogimage.jpg">
 
-    <!-- Twitter Card data -->
-	<meta name="twitter:card" content="Jan Kubat - Portfolio, Developer a bůh seberozvoje">
-	<meta name="twitter:site" content="@jankubatt">
-	<meta name="twitter:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘">
-	<meta name="twitter:description" content="Moje osobní portfolio s projekty, nápady a názory">
-	<meta name="twitter:creator" content="@jankubatt">
-	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="https://jankubat-it.cz/assets/og/ogblog.jpg">
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://jankubat-it.cz/blog/projekty/kopce-ceskeho-stredohori">
+		<meta property="twitter:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 | 𝙿𝚛𝚘𝚓𝚎𝚔𝚝𝚢">
+		<meta property="twitter:description" content="Čau! Moje technické portfolio. Momentálně studuji IT a počítačové sítě. Programování je moje hobby i moje práce. Programuji od roku 2017. Mám rád organizovanou a kvalitní práci.">
+		<meta property="twitter:image" content="https://jankubat-it.cz/assets/og/ogimage.jpg">
 
-	<!-- Open Graph data -->
-	<meta property="og:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="./index.html" />
-	<meta property="og:image" content="https://jankubat-it.cz/assets/og/ogblog.jpg" />
-	<meta property="og:description" content="Moje osobní portfolio s projekty, nápady a názory" />
-	<meta property="og:site_name" content="jankubat-it.cz" />
-	<meta name="twitter:card" content="summary_large_image">
+		<!--Icon-->
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="../../../assets/favicons/android-chrome-192x192.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../assets/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../assets/favicons/site.webmanifest">
+		<link rel="mask-icon" href="../../../assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="../../../assets/favicons/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SEVYR9W773"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+		<link href="../../../assets/lib/bootstrap.min.css" rel="stylesheet">
+		<link href="../../css/style.css" rel="stylesheet">
 
-		gtag('config', 'G-SEVYR9W773');
-	</script>
-</head>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+	    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
-<body>
-	<div id="wrapper">
-	    <div class="overlay"></div>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SEVYR9W773"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-	    <!-- Sidebar -->
-	    <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper">
-	        <div class="nav sidebar-nav">
-	            <div class="sidebar-header">
-	                <div class="sidebar-brand">
-	                    <a href="#">Jan Kubát</a>
-	                </div>
-	            </div>
-				<div class="sidebar-list">
-					<a href="../../"><div>README.md</div></a>
-	            	<a href="../"><div>Projekty</div></a>
-	            	<a href="../../knihy/"><div>Knihy</div></a>
-	            	<a href="../"><div>Zpět</div></a>
-				</div>
-	        </div>
-	    </nav>
-	    <div id="page-content-wrapper">
-	        <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
-	            <span class="hamb-top"></span>
-	            <span class="hamb-middle"></span>
-	            <span class="hamb-bottom"></span>
-	        </button>
+			gtag('config', 'G-SEVYR9W773');
+		</script>
+	</head>
 
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-lg-8 col-lg-offset-2 border border-dark monoscape mb-5">
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><h1>Kopce Českého Středohoří</h1></li>
-                            <li class="list-inline-item float-right">
-                                <p class="blockquote-footer float-right">
-                                    2021/05/23
-                                </p>
-                            </li>
-                          </ul>
-	                    <hr>
-	                    <div class="intro">
-	                        <p>
-	                            Tento projekt jsem vytvořil, jelikož <b>ve volném čase chodím rád ven</b>. A nejradši po kopcích.
-	                            <mark>České Středohoří</mark> je nádherné, a proto jsem se rozhodl pro tuto oblast.
-	                        </p>
-	                        <p>
-	                            První záminkou bylo vytvořit <u>interaktivní mapu</u>, kde si budu zaškrtávat kopce, na kterých jsem byl. To jsem stvořil celkem rychle a tak jsem začal přidávat různé funkce. Vytvořil jsem celkem velkou <b>databázi</b> kopců s jejich informacema <mark>(poloha, výška, prominence, izolace, hornina, povodí atd.)</mark>. Takže přibyla funkce, kde po kliknutí kopce vidíš i různé informace o kopci. 
-	                        </p>
-	                        <p>
-	                            Každý asi víme, jako programátoři, že <mark>když nevíme co vytvořit za projekt, tak je to pech</mark>. Tak jsem se tak plácal v editoru a upravoval kód, aby vypadal dobře a aby byl <u>efektivní</u> (Což se mi asi moc nepovedlo). A v tu ránu mě to napadlo. Uživatel by rozhodně uvítal funkci, která by <b>zobrazila areu, kterou tvoří již pokořené kopce</b>. A tak jsem začal hledat. Naštěstí api.mapy.cz nabízí geometrické funkce jako <u>čáry a polygony</u>. Teď jenom zbývalo zjistit, jak mám k sakru vybrat body, které jsou více méně border všech bodů. K tomu mi pomohl <mark>Convex Hull</mark> algoritmus. Vím, není to ideální, ale funkci to plní hezky, takže ticho ju.
-	                        </p>
-	                        <p>
-	                            Jako poslední funkci, co jsem přidal je <mark>vyhledávání</mark>. Protože koho by bavilo hledat kopec na mapě <b>manuálně</b> žejo. Vyhledávání nebyl až tak velký problém jak jsem si myslel. Napsal jsem script, který to řeší celkem dobře. <mark>Na našeptávání jsem si pomohl JQuery UI knihovnou</mark>, kde je autocomplete. Největší problém byly asi české znaky :D naštěstí s tím kolegové a kolegyně z JQuery UI počítali a vytvořili <u>mapování chrakterů</u>. Takže minimální potíž. 
-	                        </p>
-	                        <p>
-	                            Jestli tě můj projekt zaujal, tak se na něj můžeš podívat live na této adrese: <a href="http://kopceceskehostredohori.jednoduse.cz/">http://kopceceskehostredohori.jednoduse.cz/</a> Budu rád, když si to vyzkoušíš, pokud se ti nechce dělat účet, tak <b>jsem vytvořil účet test:test</b>. Projekt <mark>rozhodně není u konce</mark>, tak neváhej a testuj :P
-	                        </p>
-	                        <small class="text-muted d-inline float-left"><a class="text-muted" href="mailto:jankubat77@gmail.com?subject=Kopce%20%C4%8Cesk%C3%A9ho%20St%C5%99edoho%C5%99%C3%AD%20-%20Feedback">jankubat77@gmail.com</a></small>
-	                        <p id="figcaption" class="blockquote-footer d-inline float-right">
-	                            Jan Kubát 2021
-	                        </p>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
+	<body>
+		<div id="wrapper">
+		    <div class="overlay"></div>
 
-	    </div>
-	</div>
+		    <!-- Sidebar -->
+		    <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper">
+		        <div class="nav sidebar-nav">
+		            <div class="sidebar-header">
+		                <div class="sidebar-brand">
+		                    <a href="#">Jan Kubát</a>
+		                </div>
+		            </div>
+					<div class="sidebar-list">
+						<a href="../../"><div>README.md</div></a>
+		            	<a href="../"><div>Projekty</div></a>
+		            	<a href="../../knihy/"><div>Knihy</div></a>
+		            	<a href="../"><div>Zpět</div></a>
+					</div>
+		        </div>
+		    </nav>
+		    <div id="page-content-wrapper">
+		        <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+		            <span class="hamb-top"></span>
+		            <span class="hamb-middle"></span>
+		            <span class="hamb-bottom"></span>
+		        </button>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script src="https://kit.fontawesome.com/848da1e5f7.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script src="../../js/index.js"></script>
-    <script src="../../js/title-scroll.js"></script>
-</body>
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-lg-8 col-lg-offset-2 border border-dark monoscape mb-5">
+	                        <ul class="list-inline">
+	                            <li class="list-inline-item"><h1>Kopce Českého Středohoří</h1></li>
+	                            <li class="list-inline-item float-right">
+	                                <p class="blockquote-footer float-right">
+	                                    2021/05/23
+	                                </p>
+	                            </li>
+	                          </ul>
+		                    <hr>
+		                    <div class="intro">
+		                        <p>
+		                            Tento projekt jsem vytvořil, jelikož <b>ve volném čase chodím rád ven</b>. A nejradši po kopcích.
+		                            <mark>České Středohoří</mark> je nádherné, a proto jsem se rozhodl pro tuto oblast.
+		                        </p>
+		                        <p>
+		                            První záminkou bylo vytvořit <u>interaktivní mapu</u>, kde si budu zaškrtávat kopce, na kterých jsem byl. To jsem stvořil celkem rychle a tak jsem začal přidávat různé funkce. Vytvořil jsem celkem velkou <b>databázi</b> kopců s jejich informacema <mark>(poloha, výška, prominence, izolace, hornina, povodí atd.)</mark>. Takže přibyla funkce, kde po kliknutí kopce vidíš i různé informace o kopci. 
+		                        </p>
+		                        <p>
+		                            Každý asi víme, jako programátoři, že <mark>když nevíme co vytvořit za projekt, tak je to pech</mark>. Tak jsem se tak plácal v editoru a upravoval kód, aby vypadal dobře a aby byl <u>efektivní</u> (Což se mi asi moc nepovedlo). A v tu ránu mě to napadlo. Uživatel by rozhodně uvítal funkci, která by <b>zobrazila areu, kterou tvoří již pokořené kopce</b>. A tak jsem začal hledat. Naštěstí api.mapy.cz nabízí geometrické funkce jako <u>čáry a polygony</u>. Teď jenom zbývalo zjistit, jak mám k sakru vybrat body, které jsou více méně border všech bodů. K tomu mi pomohl <mark>Convex Hull</mark> algoritmus. Vím, není to ideální, ale funkci to plní hezky, takže ticho ju.
+		                        </p>
+		                        <p>
+		                            Jako poslední funkci, co jsem přidal je <mark>vyhledávání</mark>. Protože koho by bavilo hledat kopec na mapě <b>manuálně</b> žejo. Vyhledávání nebyl až tak velký problém jak jsem si myslel. Napsal jsem script, který to řeší celkem dobře. <mark>Na našeptávání jsem si pomohl JQuery UI knihovnou</mark>, kde je autocomplete. Největší problém byly asi české znaky :D naštěstí s tím kolegové a kolegyně z JQuery UI počítali a vytvořili <u>mapování chrakterů</u>. Takže minimální potíž. 
+		                        </p>
+		                        <p>
+		                            Jestli tě můj projekt zaujal, tak se na něj můžeš podívat live na této adrese: <a href="http://kopceceskehostredohori.jednoduse.cz/">http://kopceceskehostredohori.jednoduse.cz/</a> Budu rád, když si to vyzkoušíš, pokud se ti nechce dělat účet, tak <b>jsem vytvořil účet test:test</b>. Projekt <mark>rozhodně není u konce</mark>, tak neváhej a testuj :P
+		                        </p>
+		                        <small class="text-muted d-inline float-left"><a class="text-muted" href="mailto:jankubat77@gmail.com?subject=Kopce%20%C4%8Cesk%C3%A9ho%20St%C5%99edoho%C5%99%C3%AD%20-%20Feedback">jankubat77@gmail.com</a></small>
+		                        <p id="figcaption" class="blockquote-footer d-inline float-right">
+		                            Jan Kubát 2021
+		                        </p>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
 
+		    </div>
+		</div>
+
+		<script src="../../../assets/lib/jquery-3.5.1.min.js"></script>
+		<script src="../../../assets/lib/848da1e5f7.js"></script>
+		<script src="../../../assets/lib/bootstrap.min.js"></script>
+		<script src="../../js/index.js"></script>
+	    <script src="../../js/title-scroll.js"></script>
+	</body>
 </html>

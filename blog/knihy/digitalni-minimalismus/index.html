@@ -8,148 +8,157 @@ COPYRIGHT Jan Kubat 2020
 <!DOCTYPE html>
 
 <html lang="cs">
+    <head>
+        <title>𝙹𝚊𝚗 𝙺𝚞𝚋á𝚝 | 𝙺𝚗𝚒𝚑𝚢</title>
 
-<head>
-    <title>Jan Kubat - Blog</title>
+        <meta charset="UTF-8">
 
-    <meta charset="UTF-8">
-    <meta name="description" content="Blog of Jan Kubat">
-    <meta name="keywords" content="Jan Kubat, portfolio, github">
-    <meta name="author" content="Jan Kubat">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 | 𝙺𝚗𝚒𝚑𝚢">
+        <meta name="description" content="Čau! Moje technické portfolio. Momentálně studuji IT a počítačové sítě. Programování je moje hobby i moje práce. Programuji od roku 2017. Mám rád organizovanou a kvalitní práci.">
+        <meta name="keywords" content="Jan Kubat, portfolio, github, Honza Kubat, developer, programovani, blog, kubat jan, kubat honza">
+        <meta name="author" content="Jan Kubat">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../../assets/images/brand.png" rel="icon">
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://jankubat-it.cz/blog/knihy/digitalni-minimalismus">
+        <meta property="og:site_name" content="jankubat-it.cz">
+        <meta property="og:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 | 𝙺𝚗𝚒𝚑𝚢">
+        <meta property="og:description" content="Čau! Moje technické portfolio. Momentálně studuji IT a počítačové sítě. Programování je moje hobby i moje práce. Programuji od roku 2017. Mám rád organizovanou a kvalitní práci.">
+        <meta property="og:image" content="https://jankubat-it.cz/assets/og/ogblog.jpg">
 
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="Jan Kubat - Portfolio, Developer a bůh seberozvoje">
-    <meta name="twitter:site" content="@jankubatt">
-    <meta name="twitter:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘">
-    <meta name="twitter:description" content="Moje osobní portfolio s projekty, nápady a názory">
-    <meta name="twitter:creator" content="@jankubatt">
-    <!-- Twitter Summary card images must be at least 120x120px -->
-    <meta name="twitter:image" content="https://jankubat-it.cz/assets/og/ogblog.jpg">
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://jankubat-it.cz/blog/knihy/digitalni-minimalismus">
+        <meta property="twitter:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 | 𝙺𝚗𝚒𝚑𝚢">
+        <meta property="twitter:description" content="Čau! Moje technické portfolio. Momentálně studuji IT a počítačové sítě. Programování je moje hobby i moje práce. Programuji od roku 2017. Mám rád organizovanou a kvalitní práci.">
+        <meta property="twitter:image" content="https://jankubat-it.cz/assets/og/ogblog.jpg">
 
-    <!-- Open Graph data -->
-    <meta property="og:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="./index.html" />
-    <meta property="og:image" content="https://jankubat-it.cz/assets/og/ogblog.jpg" />
-    <meta property="og:description" content="Moje osobní portfolio s projekty, nápady a názory" />
-    <meta property="og:site_name" content="jankubat-it.cz" />
-    <meta name="twitter:card" content="summary_large_image">
+        <!--Icon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../../../assets/favicons/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../../../assets/favicons/site.webmanifest">
+        <link rel="mask-icon" href="../../../assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="../../../assets/favicons/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEVYR9W773"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        <link href="../../../assets/lib/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/style.css" rel="stylesheet">
 
-        gtag('config', 'G-SEVYR9W773');
-    </script>
-</head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
-<body>
-    <div id="wrapper">
-        <div class="overlay"></div>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEVYR9W773"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        <!-- Sidebar -->
-        <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper">
-            <div class="nav sidebar-nav">
-                <div class="sidebar-header">
-                    <div class="sidebar-brand">
-                        <a href="#">Jan Kubát</a>
+            gtag('config', 'G-SEVYR9W773');
+        </script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div class="overlay"></div>
+
+            <!-- Sidebar -->
+            <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper">
+                <div class="nav sidebar-nav">
+                    <div class="sidebar-header">
+                        <div class="sidebar-brand">
+                            <a href="#">Jan Kubát</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-list">
+                        <a href="../../"><div>README.md</div></a>
+                        <a href="../../projekty"><div>Projekty</div></a>
+                        <a href="../../knihy/"><div>Knihy</div></a>
+                        <a href="../"><div>Zpět</div></a>
                     </div>
                 </div>
-                <div class="sidebar-list">
-                    <a href="../../"><div>README.md</div></a>
-                    <a href="../../projekty"><div>Projekty</div></a>
-                    <a href="../../knihy/"><div>Knihy</div></a>
-                    <a href="../"><div>Zpět</div></a>
-                </div>
-            </div>
-        </nav>
-        <div id="page-content-wrapper">
-            <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
-                <span class="hamb-top"></span>
-                <span class="hamb-middle"></span>
-                <span class="hamb-bottom"></span>
-            </button>
+            </nav>
+            <div id="page-content-wrapper">
+                <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                    <span class="hamb-top"></span>
+                    <span class="hamb-middle"></span>
+                    <span class="hamb-bottom"></span>
+                </button>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 border border-dark monoscape mb-5">
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><h1>Digitální Minimalismus</h1></li>
-                            <li class="list-inline-item float-right">
-                                <p class="blockquote-footer float-right">
-                                    2021/05/23
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 border border-dark monoscape mb-5">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><h1>Digitální Minimalismus</h1></li>
+                                <li class="list-inline-item float-right">
+                                    <p class="blockquote-footer float-right">
+                                        2021/05/23
+                                    </p>
+                                </li>
+                              </ul>
+                            <hr>
+                            <div class="intro">
+                                <h1>Co jsem si odnesl z knihy</h1><br>
+                                <h2>Kvalitní volný čas</h2>
+                                <p>
+                                    Většina lidí tráví volný čas koukáním na videa, nebo surfováním na internetu. Říkáte si:
+                                    ,,Po náročné práci si sednu a kouknu na seriál". Na tom není asi nic špatného. Ale asi nejsem
+                                    jediný, který se cítí bídně na konci dne, pokud to takhle udělá. Nevím z jakého důvodu,
+                                    ale prostě nejsem šťastný. V této kapitole se pojednává o tom, že klíčem k radosti ze dne
+                                    je něco tzv. ,,crafty" bych to nazval. Místo koukání na televizi se věnujte koníčkům,
+                                    třeba výroba věcí ze dřeva, sváření, práce na zahradě, prostě tvorba něčeho, co má hodnotu. To
+                                    se netýká např. programování, jelikož to není fyzické a z nějakého důvodu to nefunguje. Dobrý přístup
+                                    je např. se sebrat, sepsat list rozbitých věcí co vlastníte, a opravit je. Tato část mě zaujala asi nejvíce.
                                 </p>
-                            </li>
-                          </ul>
-                        <hr>
-                        <div class="intro">
-                            <h1>Co jsem si odnesl z knihy</h1><br>
-                            <h2>Kvalitní volný čas</h2>
-                            <p>
-                                Většina lidí tráví volný čas koukáním na videa, nebo surfováním na internetu. Říkáte si:
-                                ,,Po náročné práci si sednu a kouknu na seriál". Na tom není asi nic špatného. Ale asi nejsem
-                                jediný, který se cítí bídně na konci dne, pokud to takhle udělá. Nevím z jakého důvodu,
-                                ale prostě nejsem šťastný. V této kapitole se pojednává o tom, že klíčem k radosti ze dne
-                                je něco tzv. ,,crafty" bych to nazval. Místo koukání na televizi se věnujte koníčkům,
-                                třeba výroba věcí ze dřeva, sváření, práce na zahradě, prostě tvorba něčeho, co má hodnotu. To
-                                se netýká např. programování, jelikož to není fyzické a z nějakého důvodu to nefunguje. Dobrý přístup
-                                je např. se sebrat, sepsat list rozbitých věcí co vlastníte, a opravit je. Tato část mě zaujala asi nejvíce.
-                            </p>
-                            <div class="striped-line"></div>
-                            <h2>Trávení času o samotě</h2>
-                            <p>
-                                Momenty, kdy jsme sami s našimi myšlenkami skoro vymizely z naší společnosti s příchodem mobilních telefonů.
-                                Zkuste se sami zamyslet, kdy jste naposled čekali na někoho, nebo na něco a vytáhli jste mobil k zkrácení chvíle.
-                                Tyhle akce nás obírají o tyto chvíle. Chvíle, kdy pozorujete okolí, přemýšlíte nad věcmi atd.
-                            </p>
-                            <div class="striped-line"></div>
-                            <h2>Nereagujte na věci na sociálních sítích</h2>
-                            <p>
-                                Nemusíte klikat na like, či komentovat každý obsah co vidíte a co se vám líbí.
-                                Pokud je to rodina, dohodněte si návštěvu, nebo jim zavolejte v přijatelnou chvíli.
-                                Rozhodně to udrží vaše rodinné pouto lépe než nějaký komentář.
-                            </p>
-                            <div class="striped-line"></div>
-                            <h2>Digital declutter</h2>
-                            <p>
-                                Samozřejmě hlavní zaměření této knihy jsou digitální technologie.
-                                Autor mluví o tzv. ,,Digital Declutter", což bych definoval jako udělat si pořádek v používání
-                                digitálních věcí. Např. čas strávený na danném zařízení, nebo na konkrétních stránkách.
-                                Je toho fakt hodně, takže shrnu to, co mě zaujalo.
-                                Vytyčte si čas na sociální sítě. Např. od 7 do 8 hodin večer zkontrolovat a projet co se děje
-                                na sociálních sítích. Toto jsem aplikoval a dost mi to pomohlo s mojí závislostí. Pak obecně
-                                udělat 30 denní detox, po kterém si definujete hodnotu daných sociálních sítí a ponecháte jenom
-                                ty, co tu hodnotu přináší. Takže tento declutter není sebe zbavení soc. sítí, ale jenom přehodnocení
-                                jejich používaní.
-                                Více v knize. Nemůžu než jen doporučit.
-                            </p>            
-                            <small class="text-muted d-inline float-left"><a class="text-muted" href="mailto:jankubat77@gmail.com?subject=Digit%C3%A1ln%C3%AD%20Minimalismus%20-%20Feedback">jankubat77@gmail.com</a></small>
-                            <p id="figcaption" class="blockquote-footer d-inline float-right">
-                                Jan Kubát 2021
-                            </p>
+                                <div class="striped-line"></div>
+                                <h2>Trávení času o samotě</h2>
+                                <p>
+                                    Momenty, kdy jsme sami s našimi myšlenkami skoro vymizely z naší společnosti s příchodem mobilních telefonů.
+                                    Zkuste se sami zamyslet, kdy jste naposled čekali na někoho, nebo na něco a vytáhli jste mobil k zkrácení chvíle.
+                                    Tyhle akce nás obírají o tyto chvíle. Chvíle, kdy pozorujete okolí, přemýšlíte nad věcmi atd.
+                                </p>
+                                <div class="striped-line"></div>
+                                <h2>Nereagujte na věci na sociálních sítích</h2>
+                                <p>
+                                    Nemusíte klikat na like, či komentovat každý obsah co vidíte a co se vám líbí.
+                                    Pokud je to rodina, dohodněte si návštěvu, nebo jim zavolejte v přijatelnou chvíli.
+                                    Rozhodně to udrží vaše rodinné pouto lépe než nějaký komentář.
+                                </p>
+                                <div class="striped-line"></div>
+                                <h2>Digital declutter</h2>
+                                <p>
+                                    Samozřejmě hlavní zaměření této knihy jsou digitální technologie.
+                                    Autor mluví o tzv. ,,Digital Declutter", což bych definoval jako udělat si pořádek v používání
+                                    digitálních věcí. Např. čas strávený na danném zařízení, nebo na konkrétních stránkách.
+                                    Je toho fakt hodně, takže shrnu to, co mě zaujalo.
+                                    Vytyčte si čas na sociální sítě. Např. od 7 do 8 hodin večer zkontrolovat a projet co se děje
+                                    na sociálních sítích. Toto jsem aplikoval a dost mi to pomohlo s mojí závislostí. Pak obecně
+                                    udělat 30 denní detox, po kterém si definujete hodnotu daných sociálních sítí a ponecháte jenom
+                                    ty, co tu hodnotu přináší. Takže tento declutter není sebe zbavení soc. sítí, ale jenom přehodnocení
+                                    jejich používaní.
+                                    Více v knize. Nemůžu než jen doporučit.
+                                </p>            
+                                <small class="text-muted d-inline float-left"><a class="text-muted" href="mailto:jankubat77@gmail.com?subject=Digit%C3%A1ln%C3%AD%20Minimalismus%20-%20Feedback">jankubat77@gmail.com</a></small>
+                                <p id="figcaption" class="blockquote-footer d-inline float-right">
+                                    Jan Kubát 2021
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://kit.fontawesome.com/848da1e5f7.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="../../js/index.js"></script>
-    <script src="../../js/title-scroll.js"></script>
-</body>
-
+        <script src="../../../assets/lib/jquery-3.5.1.min.js"></script>
+        <script src="../../../assets/lib/848da1e5f7.js"></script>
+        <script src="../../../assets/lib/bootstrap.min.js"></script>
+        <script src="../../js/index.js"></script>
+        <script src="../../js/title-scroll.js"></script>
+    </body>
 </html>

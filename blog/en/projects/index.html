@@ -7,353 +7,362 @@ COPYRIGHT Jan Kubat 2020
 -->
 <!DOCTYPE html>
 
-<html lang="cs">
+<html lang="en">
+	<head>
+		<title>𝙹𝚊𝚗 𝙺𝚞𝚋a𝚝 | 𝙿𝚛𝚘𝚓𝚎𝚌𝚝𝚜</title>
 
-<head>
-	<title>Jan Kubat - Blog</title>
+        <meta charset="UTF-8">
 
-	<meta charset="UTF-8">
-	<meta name="description" content="Blog of Jan Kubat">
-	<meta name="keywords" content="Jan Kubat, portfolio, github">
-	<meta name="author" content="Jan Kubat">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 | 𝙿𝚛𝚘𝚓𝚎𝚌𝚝𝚜">
+        <meta name="description" content="Hi! This is my tech portfolio. Currently I study IT and computer networks. Programming is my hobby and my job. I code since 2017. I like organized and job nicely done.">
+        <meta name="keywords" content="Jan Kubat, portfolio, github, Honza Kubat, developer, programovani, blog, kubat jan, kubat honza">
+        <meta name="author" content="Jan Kubat">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
 
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-	<link href="../../../assets/images/brand.png" rel="icon">
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://jankubat-it.cz/blog/en/projects">
+        <meta property="og:site_name" content="jankubat-it.cz">
+        <meta property="og:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 | 𝙿𝚛𝚘𝚓𝚎𝚌𝚝𝚜">
+        <meta property="og:description" content="Hi! This is my tech portfolio. Currently I study IT and computer networks. Programming is my hobby and my job. I code since 2017. I like organized and job nicely done.">
+        <meta property="og:image" content="https://jankubat-it.cz/assets/og/ogimage.jpg">
 
-    <!-- Twitter Card data -->
-	<meta name="twitter:card" content="Jan Kubat - Portfolio, Developer a bůh seberozvoje">
-	<meta name="twitter:site" content="@jankubatt">
-	<meta name="twitter:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘">
-	<meta name="twitter:description" content="Moje osobní portfolio s projekty, nápady a názory">
-	<meta name="twitter:creator" content="@jankubatt">
-	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="https://jankubat-it.cz/assets/og/ogblog.jpg">
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://jankubat-it.cz/blog/en/projects">
+        <meta property="twitter:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 | 𝙿𝚛𝚘𝚓𝚎𝚌𝚝𝚜">
+        <meta property="twitter:description" content="Hi! This is my tech portfolio. Currently I study IT and computer networks. Programming is my hobby and my job. I code since 2017. I like organized and job nicely done.">
+        <meta property="twitter:image" content="https://jankubat-it.cz/assets/og/ogimage.jpg">
 
-	<!-- Open Graph data -->
-	<meta property="og:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="./index.html" />
-	<meta property="og:image" content="https://jankubat-it.cz/assets/og/ogblog.jpg" />
-	<meta property="og:description" content="Moje osobní portfolio s projekty, nápady a názory" />
-	<meta property="og:site_name" content="jankubat-it.cz" />
-	<meta name="twitter:card" content="summary_large_image">
+        <!--Icon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../../../assets/favicons/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../../../assets/favicons/site.webmanifest">
+        <link rel="mask-icon" href="../../../assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="../../../assets/favicons/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+		
+		<link href="../../../assets/lib/bootstrap.min.css" rel="stylesheet">
+		<link href="../../css/style.css" rel="stylesheet">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SEVYR9W773"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+	    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
-		gtag('config', 'G-SEVYR9W773');
-	</script>
-</head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SEVYR9W773"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-<body>
-	<div id="wrapper"> 
-	    <div id="page-content-wrapper">
-	        <div class="container">
-	            <div class="row">
-	                <div class="container">
-                        <div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/kcs.png" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">JQuery, PHP, MariaDB</small>
-								        <h5 class="card-title d-inline">Kopce Českého Středohoří</h5>
-								        <p class="card-text">
-								        	Interactive map with hills from "Czech Central Highlands" (České Středohoří). You can search for hills, tick those you already been on and visualize them with nice geometry.
-								        </p>
-								        <a href="./kopce-ceskeho-stredohori/" class="btn btn-outline-dark">To project</a>
-								        <p class="card-text date"><small class="text-muted float-right">2021/05/21</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
+			gtag('config', 'G-SEVYR9W773');
+		</script>
+	</head>
 
-						<div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/jankubatit.png" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">JQuery, JS, HTML, CSS</small>
-								        <h5 class="card-title d-inline">jankubat-it.cz</h5>
-								        <p class="card-text">
-								        	My personal web which you are currently on.
-								        </p>
-								        <a href="https://github.com/jankubatt/jankubat-it.cz" class="btn btn-outline-dark">To project</a>
-								        <p class="card-text date"><small class="text-muted float-right">2021</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
+	<body>
+		<div id="wrapper"> 
+		    <div id="page-content-wrapper">
+		        <div class="container">
+		            <div class="row">
+		                <div class="container">
+	                        <div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/kcs.png" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">JQuery, PHP, MariaDB</small>
+									        <h5 class="card-title d-inline">Kopce Českého Středohoří</h5>
+									        <p class="card-text">
+									        	Interactive map with hills from "Czech Central Highlands" (České Středohoří).
+									        </p>
+									        <a href="./kopce-ceskeho-stredohori/" class="btn btn-outline-dark">To project</a>
+									        <p class="card-text date"><small class="text-muted float-right">2021/05/21</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
 
-						<div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/unity.jpg" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">Unity, C#</small>
-								        <h5 class="card-title d-inline">AssaultMiner</h5>
-								        <p class="card-text">
-								        	Simple game, two players battle each other, mine materials. Player that is alive wins.
-								        </p>
-								        <a href="https://github.com/jankubatt/AssaultMiner" class="btn btn-outline-dark">To project</a>
-								        <p class="card-text date"><small class="text-muted float-right">2021/05/01</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
+							<div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/jankubatit.png" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">JQuery, JS, HTML, CSS</small>
+									        <h5 class="card-title d-inline">jankubat-it.cz</h5>
+									        <p class="card-text">
+									        	My personal web which you are currently on.
+									        </p>
+									        <a href="https://github.com/jankubatt/jankubat-it.cz" class="btn btn-outline-dark">To project</a>
+									        <p class="card-text date"><small class="text-muted float-right">2021</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
 
-						<div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/nodejs.png" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">NodeJS, HTML, CSS</small>
-								        <h5 class="card-title d-inline">JDMarket</h5>
-								        <p class="card-text">
-								        	E-Shop with Japan cars.
-								        </p>
-								        <a href="https://github.com/jankubatt/JDMarket" class="btn btn-outline-dark">To project</a>
-								        <p class="card-text date"><small class="text-muted float-right">2021/03/16</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
+							<div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/unity.jpg" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">Unity, C#</small>
+									        <h5 class="card-title d-inline">AssaultMiner</h5>
+									        <p class="card-text">
+									        	Simple game, two players battle each other, mine materials. Player that is alive wins.
+									        </p>
+									        <a href="https://github.com/jankubatt/AssaultMiner" class="btn btn-outline-dark">To project</a>
+									        <p class="card-text date"><small class="text-muted float-right">2021/05/01</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
 
-						<div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/home_assistant.png" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">Home Assistant</small>
-								        <h5 class="card-title d-inline">Home Automatization</h5>
-								        <p class="card-text">
-								        	For the brains of my home automatization I used Home Assistant, because it's easy to use and simple.
-								        </p>
-								        <p class="card-text date"><small class="text-muted float-right">2021</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
+							<div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/nodejs.png" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">NodeJS, HTML, CSS</small>
+									        <h5 class="card-title d-inline">JDMarket</h5>
+									        <p class="card-text">
+									        	E-Shop with Japan cars.
+									        </p>
+									        <a href="https://github.com/jankubatt/JDMarket" class="btn btn-outline-dark">To project</a>
+									        <p class="card-text date"><small class="text-muted float-right">2021/03/16</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
 
-						<div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/nodejs.png" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">NodeJS, HTML, CSS</small>
-								        <h5 class="card-title d-inline">Habbit Tracker</h5>
-								        <p class="card-text">
-								        	Web app that lets you track your habbits.
-								        </p>
-								        <a href="https://github.com/jankubatt/Habbit-Tracker" class="btn btn-outline-dark">To project</a>
-								        <p class="card-text date"><small class="text-muted float-right">2021/02/24</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
+							<div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/home_assistant.png" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">Home Assistant</small>
+									        <h5 class="card-title d-inline">Home Automatization</h5>
+									        <p class="card-text">
+									        	For the brains of my home automatization I used Home Assistant, because it's easy to use and simple.
+									        </p>
+									        <p class="card-text date"><small class="text-muted float-right">2021</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
 
-						<div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/python.jpg" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">Python</small>
-								        <h5 class="card-title d-inline">Pong</h5>
-								        <p class="card-text">
-								        	Pong in pygame.
-								        </p>
-								        <a href="https://github.com/jankubatt/Pong" class="btn btn-outline-dark">To project</a>
-								        <p class="card-text date"><small class="text-muted float-right">2020/11/20</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
+							<div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/nodejs.png" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">NodeJS, HTML, CSS</small>
+									        <h5 class="card-title d-inline">Habbit Tracker</h5>
+									        <p class="card-text">
+									        	Web app that lets you track your habbits.
+									        </p>
+									        <a href="https://github.com/jankubatt/Habbit-Tracker" class="btn btn-outline-dark">To project</a>
+									        <p class="card-text date"><small class="text-muted float-right">2021/02/24</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
 
-						<div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/python.jpg" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">Python</small>
-								        <h5 class="card-title d-inline">Snake</h5>
-								        <p class="card-text">
-								        	Snake in pygame.
-								        </p>
-								        <a href="https://github.com/jankubatt/Snake" class="btn btn-outline-dark">To project</a>
-								        <p class="card-text date"><small class="text-muted float-right">2020/11/14</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
+							<div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/python.jpg" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">Python</small>
+									        <h5 class="card-title d-inline">Pong</h5>
+									        <p class="card-text">
+									        	Pong in pygame.
+									        </p>
+									        <a href="https://github.com/jankubatt/Pong" class="btn btn-outline-dark">To project</a>
+									        <p class="card-text date"><small class="text-muted float-right">2020/11/20</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
 
-						<div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/python.jpg" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">Python</small>
-								        <h5 class="card-title d-inline">Pexeso</h5>
-								        <p class="card-text">
-								        	Pexeso in pygame.
-								        </p>
-								        <a href="https://github.com/jankubatt/Pexeso" class="btn btn-outline-dark">To project</a>
-								        <p class="card-text date"><small class="text-muted float-right">2020/10/24</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
+							<div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/python.jpg" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">Python</small>
+									        <h5 class="card-title d-inline">Snake</h5>
+									        <p class="card-text">
+									        	Snake in pygame.
+									        </p>
+									        <a href="https://github.com/jankubatt/Snake" class="btn btn-outline-dark">To project</a>
+									        <p class="card-text date"><small class="text-muted float-right">2020/11/14</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
 
-						<div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/python.jpg" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">Python</small>
-								        <h5 class="card-title d-inline">TicTacToe</h5>
-								        <p class="card-text">
-								        	TickTacToe in pygame.
-								        </p>
-								        <a href="https://github.com/jankubatt/TicTacToe" class="btn btn-outline-dark">To project</a>
-								        <p class="card-text date"><small class="text-muted float-right">2020/10/17</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
+							<div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/python.jpg" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">Python</small>
+									        <h5 class="card-title d-inline">Pexeso</h5>
+									        <p class="card-text">
+									        	Pexeso in pygame.
+									        </p>
+									        <a href="https://github.com/jankubatt/Pexeso" class="btn btn-outline-dark">To project</a>
+									        <p class="card-text date"><small class="text-muted float-right">2020/10/24</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
 
-						<div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/php.png" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">PHP, HTML, CSS</small>
-								        <h5 class="card-title d-inline">Guest Book</h5>
-								        <p class="card-text">
-								        	School project assigned by teacher.
-								        </p>
-								        <a href="https://github.com/jankubatt/Guest-Book" class="btn btn-outline-dark">To project</a>
-								        <p class="card-text date"><small class="text-muted float-right">2020/11/02</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
+							<div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/python.jpg" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">Python</small>
+									        <h5 class="card-title d-inline">TicTacToe</h5>
+									        <p class="card-text">
+									        	TickTacToe in pygame.
+									        </p>
+									        <a href="https://github.com/jankubatt/TicTacToe" class="btn btn-outline-dark">To project</a>
+									        <p class="card-text date"><small class="text-muted float-right">2020/10/17</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
 
-						<div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/unity.jpg" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">Unity, C#</small>
-								        <h5 class="card-title d-inline">Kubats Tanky</h5>
-								        <p class="card-text">
-								        	Simple worms like game. This was my first year school project.
-								        </p>
-								        <a href="https://github.com/jankubatt/KubatsTanky" class="btn btn-outline-dark">To project</a>
-								        <p class="card-text date"><small class="text-muted float-right">2020/10/08</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
+							<div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/php.png" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">PHP, HTML, CSS</small>
+									        <h5 class="card-title d-inline">Guest Book</h5>
+									        <p class="card-text">
+									        	School project assigned by teacher.
+									        </p>
+									        <a href="https://github.com/jankubatt/Guest-Book" class="btn btn-outline-dark">To project</a>
+									        <p class="card-text date"><small class="text-muted float-right">2020/11/02</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
 
-						<div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/javascript.png" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">JQuery, JS, HTML, CSS</small>
-								        <h5 class="card-title d-inline">Rock Paper Scissors</h5>
-								        <p class="card-text">
-								        	Rock Paper Scissors in web browser.
-								        </p>
-								        <a href="https://github.com/jankubatt/RockPaperScissors" class="btn btn-outline-dark">To project</a>
-								        <p class="card-text date"><small class="text-muted float-right">2020/09/05</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
+							<div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/unity.jpg" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">Unity, C#</small>
+									        <h5 class="card-title d-inline">Kubats Tanky</h5>
+									        <p class="card-text">
+									        	Simple worms like game. This was my first year school project.
+									        </p>
+									        <a href="https://github.com/jankubatt/KubatsTanky" class="btn btn-outline-dark">To project</a>
+									        <p class="card-text date"><small class="text-muted float-right">2020/10/08</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
+
+							<div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/javascript.png" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">JQuery, JS, HTML, CSS</small>
+									        <h5 class="card-title d-inline">Rock Paper Scissors</h5>
+									        <p class="card-text">
+									        	Rock Paper Scissors in web browser.
+									        </p>
+									        <a href="https://github.com/jankubatt/RockPaperScissors" class="btn btn-outline-dark">To project</a>
+									        <p class="card-text date"><small class="text-muted float-right">2020/09/05</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
 
 
-						<div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/php.png" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">PHP, MariaDB, HTML, CSS</small>
-								        <h5 class="card-title d-inline">Forum</h5>
-								        <p class="card-text">
-								        	Reddit like forum done with PHP.
-								        </p>
-								        <a href="https://github.com/jankubatt/Forum" class="btn btn-outline-dark">To project</a>
-								        <p class="card-text date"><small class="text-muted float-right">2020/07/13</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
+							<div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/php.png" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">PHP, MariaDB, HTML, CSS</small>
+									        <h5 class="card-title d-inline">Forum</h5>
+									        <p class="card-text">
+									        	Reddit like forum done with PHP.
+									        </p>
+									        <a href="https://github.com/jankubatt/Forum" class="btn btn-outline-dark">To project</a>
+									        <p class="card-text date"><small class="text-muted float-right">2020/07/13</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
 
-						<div class="card mb-3">
-						  	<div class="row g-0">
-						    	<div class="col-md-4">
-						      		<img src="./img/C-Sharp.png" alt="project image" class="img-fluid">
-						    	</div>
-						    	<div class="col-md-8">
-						      		<div class="card-body">
-						      			<small class="text-muted card-text d-inline float-right">C#</small>
-								        <h5 class="card-title d-inline">Calculator</h5>
-								        <p class="card-text">
-								        	Calculator in Windows Forms.
-								        </p>
-								        <a href="https://github.com/jankubatt/Simple-Calculator" class="btn btn-outline-dark">To project</a>
-								        <p class="card-text date"><small class="text-muted float-right">2019/06/13</small></p>
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
+							<div class="card mb-3">
+							  	<div class="row g-0">
+							    	<div class="col-md-4">
+							      		<img src="./img/C-Sharp.png" alt="project image" class="img-fluid">
+							    	</div>
+							    	<div class="col-md-8">
+							      		<div class="card-body">
+							      			<small class="text-muted card-text d-inline float-right">C#</small>
+									        <h5 class="card-title d-inline">Calculator</h5>
+									        <p class="card-text">
+									        	Calculator in Windows Forms.
+									        </p>
+									        <a href="https://github.com/jankubatt/Simple-Calculator" class="btn btn-outline-dark">To project</a>
+									        <p class="card-text date"><small class="text-muted float-right">2019/06/13</small></p>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script src="https://kit.fontawesome.com/848da1e5f7.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script src="../../js/index.js"></script>
-    <script src="../../js/title-scroll.js"></script>
-</body>
-
+		<script src="../../../assets/lib/jquery-3.5.1.min.js"></script>
+		<script src="../../../assets/lib/848da1e5f7.js"></script>
+		<script src="../../../assets/lib/bootstrap.min.js"></script>
+		<script src="../../js/index.js"></script>
+	    <script src="../../js/title-scroll.js"></script>
+	</body>
 </html>
