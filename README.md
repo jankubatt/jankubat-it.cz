@@ -2,5 +2,5 @@
 My personal web right now
 
 # Info
-This is my new minimalist version of my personal web/portfolio.
+This is my minimalist version of my personal web/portfolio.
 
