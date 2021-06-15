@@ -68,12 +68,17 @@ body {
     font-size: 1.5em;
 }
 
+.accomplisments img {
+    height: 100px;
+    width: auto;
+}
+
 /* Header */
 #header {
     margin-top: 15em;
     animation-name: fade;
     animation-duration: 4s;
-    margin-bottom: 25em;
+    margin-bottom: 15em;
 }
 
 .btn-header {
@@ -90,7 +95,7 @@ body {
 
 /* projects */
 #projects {
-    margin-top: 40em;
+    margin-top: 15em;
     margin-bottom: 10em;
 }
 
