@@ -1,6 +1,10 @@
 # jankubat-it.cz
-My personal web right now
+Repo of my personal web which you can find on *https://jankubat-it.cz/*
+<br>
+Normal personal portfolio with my projects, contact information and blog.
 
-# Info
-This is my minimalist version of my personal web/portfolio.
+![img](https://github.com/jankubatt/jankubat-it.cz/blob/master/assets/images/web.png)
+
+# How I created it
+I wanted simple minimalistic web design. That means minimalistic look and structure. I think that it looks good. About structure, there is no database or some system behind it. It is plain HTML, CSS and JS (Bootstrap and JQuery is used).
 
