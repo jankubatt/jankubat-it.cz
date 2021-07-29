@@ -4,12 +4,12 @@ body {
 }
 
 * {
-    cursor: url('../images/cursor.png'), auto !important;
+    cursor: url('/assets/img/cursor.png'), auto !important;
 }
 
 @font-face {
     font-family: 'Source Sans Regular';
-    src: url('font/SourceSansPro-Regular.woff2') format('woff2'), url('font/SourceSansPro-Regular.woff') format('woff');
+    src: url('/assets/css/font/SourceSansPro-Regular.woff2') format('woff2'), url('/assets/css/font/SourceSansPro-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -17,7 +17,7 @@ body {
 
 @font-face {
     font-family: 'Source Sans Light';
-    src: url('font/SourceSansPro-Light.woff2') format('woff2'), url('font/SourceSansPro-Light.woff') format('woff');
+    src: url('/assets/css/font/SourceSansPro-Light.woff2') format('woff2'), url('/assets/css/font/SourceSansPro-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
