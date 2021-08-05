@@ -36,14 +36,14 @@ COPYRIGHT Jan Kubat 2020
 
         <!--Icon-->
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-chrome-192x192.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/assets/favicons/site.webmanifest">
-        <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+		<link rel="manifest" href="/assets/favicons/site.webmanifest">
+		<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
 		
 		<link href="/assets/lib/bootstrap.min.css" rel="stylesheet">
 		<link href="/assets/css/style.css" rel="stylesheet">
@@ -100,8 +100,15 @@ COPYRIGHT Jan Kubat 2020
 
 		<!--Header-->
 		<div id="header" class="text-center d-flex justify-content-center flex-column">
-			<h1 class="header-h1">Jan Kubat</h1>
-			<h2 class="header-h2">Developer and god of self-development</h2>
+			<div class="row">
+				<div class="col text-right">
+					<img src="/assets/img/brand.png" alt="" class="img-fluid" width="200">
+				</div>
+				<div class="col text-left">
+					<h1 class="header-h1">Jan Kubat</h1>
+					<h2 class="header-h2">Developer and explorer</h2>
+				</div>
+			</div>
 			<div class="btn-header">
 				<a class="btn btn-outline-dark btn-lg" href="https://github.com/jankubatt/" target="blank_">GitHub <i class="fab fa-github"></i></a>
 				<a class="btn btn-outline-dark btn-lg" href="#projectsJquery" target="blank_">Projects <i class="fas fa-laptop-code"></i></a>
