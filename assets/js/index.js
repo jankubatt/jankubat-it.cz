@@ -18,8 +18,8 @@ $(".dropdown").on("click", function() {
 	sessionStorage.setItem("clicked", "true");
 });
 
-$.getJSON("https://geo.ipify.org/api/v1?apiKey=at_5hNQ4Gjv5vH77KEL0pwd2eT3y3aNI", function(data) {
-	if (data.location.country != "CZ" && clicked == null) {
-		window.location.replace("./en");
-	}
-});
+let userLang = navigator.language || navigator.userLanguage; 
+
+if (userLang != "cs" && clicked == null) {
+	window.location.replace("./en");
+}
