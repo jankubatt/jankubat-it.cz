@@ -7,6 +7,18 @@ body {
     cursor: url('/assets/img/cursor.png'), auto !important;
 }
 
+.goal-item {
+    border: 1px solid black;
+    height: 15em;
+    width: 15em;
+    text-align: center;
+    padding: 5px;
+}
+
+.goal-item > img{
+    height: 6em;
+}
+
 @font-face {
     font-family: 'Source Sans Regular';
     src: url('/assets/css/font/SourceSansPro-Regular.woff2') format('woff2'), url('/assets/css/font/SourceSansPro-Regular.woff') format('woff');
@@ -163,6 +175,3 @@ body {
         padding: 1em 5em 0em 5em;
     }
   }
-
-
-
