@@ -1,5 +1,7 @@
 AddDefaultCharset UTF-8
 
+Header set Cache-Control "max-age=604800, public"
+
 ErrorDocument 400 /errors/400.html
 ErrorDocument 401 /errors/401.html
 ErrorDocument 403 /errors/403.html

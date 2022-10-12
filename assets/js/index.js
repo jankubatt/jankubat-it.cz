@@ -21,5 +21,5 @@ $(".dropdown").on("click", function() {
 let userLang = navigator.language || navigator.userLanguage; 
 
 if (userLang != "cs" && clicked == null) {
-	window.location.replace("./en");
+	window.location.replace("./en/");
 }

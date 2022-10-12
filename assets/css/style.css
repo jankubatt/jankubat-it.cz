@@ -7,6 +7,10 @@ body {
     cursor: url('/assets/img/cursor.png'), auto !important;
 }
 
+a {
+    cursor: pointer !important;
+}
+
 .goal-item {
     border: 1px solid black;
     height: 15em;
@@ -33,11 +37,6 @@ body {
     font-weight: 300;
     font-style: normal;
     font-display: swap;
-}
-
-@keyframes fade {
-    from {opacity: 0%;}
-    to {opacity: 100%;}
 }
 
 .center {
@@ -88,8 +87,6 @@ body {
 /* Header */
 #header {
     margin-top: 15em;
-    animation-name: fade;
-    animation-duration: 4s;
     margin-bottom: 15em;
 }
 
