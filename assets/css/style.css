@@ -4,7 +4,7 @@ body {
 }
 
 * {
-    cursor: url('/assets/img/cursor.png'), auto !important;
+    cursor: url('/assets/img/cursor.webp'), auto !important;
 }
 
 a {
