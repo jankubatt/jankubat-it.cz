@@ -25,7 +25,7 @@
 	window.addEventListener('load', () => {
 		let [start, speed] = getParams('data-start', 'data-speed');
 
-		let title = "Jan Kubat 2021 ";
+		let title = "Jan Kubat 2023 ";
 		let i = 0;
 
 		setTimeout(function() {
