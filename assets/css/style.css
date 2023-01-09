@@ -11,6 +11,18 @@ a {
     cursor: pointer !important;
 }
 
+.accomplisments {
+    font-size: xx-large;
+}
+
+.accomplisments > ul {
+    list-style: none;
+}
+
+.accomplisments li {
+    margin-bottom: 3vh;
+}
+
 .goal-item {
     border: 1px solid black;
     height: 15em;
