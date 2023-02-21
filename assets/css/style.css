@@ -79,6 +79,10 @@ a {
 
 
 /* Navbar */
+.navbar-custom {
+    background-color: rgba(100,100,100,0.2) !important;
+}
+
 .navbar-text-light {
     font-family: 'Source sans Light';
 }
