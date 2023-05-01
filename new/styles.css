@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(./font/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: RobotoItalic;
+    src: url(./font/Roboto-Italic.ttf);
+}
+
+@font-face {
+    font-family: RobotoThin;
+    src: url(./font/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: RobotoThinItalic;
+    src: url(./font/Roboto-ThinItalic.ttf);
+}
+
+body {
+    font-family: Roboto;
+    background-color: #2e3445;
+    color: #dbe8d4;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/** NAVIGATION **/
+.navbar {
+    background-color: #525e65;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    z-index: 100;
+    box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.5);
+}
+
+.navbar-item {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #dbe8d4;
+    line-height: 3em;
+    padding: 0 1em;
+    cursor: pointer;
+}
+
+.navbar-item:hover {
+    color: #dbe8d4;
+    border-bottom: 0.5em solid #dbe8d4;
+    line-height: 2em;
+    padding: 0 1em;
+    cursor: pointer;
+}
+
+.navbar-item-selected {
+    color: #dbe8d4;
+    font-weight: bold;
+    border-bottom: 0.5em solid #dbe8d4;
+    line-height: 2em;
+    padding: 0 1em;
+    cursor: pointer;
+}
+
+/** HEADER **/
+.header {
+    text-align: center;
+    width: 100vw;
+}
+
+.header h1 {
+    font-family: RobotoThin;
+    font-size: 10rem;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+}
+
+.header h2 {
+    font-family: RobotoBold;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+/** MISC **/
+
+
+/** PROJECTS **/
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5vw;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25em;
+    height: 15em;
+    margin: 2em;
+    padding: 0;
+    background-color: #525e65;
+    box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: width 1s, height 1s;
+}
+
+.project:hover {
+    width: 26em;
+    height: 16em;
+    cursor: pointer;
+}
