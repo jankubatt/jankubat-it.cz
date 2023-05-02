@@ -1,29 +1,102 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Jan Kubát - Full-Stack Web Developer - Personal Web Portoflio</title>
         <link rel="stylesheet" href="./styles.css">
+
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Jan Kubát - Full-Stack Web Developer - Personal Web Portoflio</title>
+	
+		<!-- Primary Meta Tags -->
+		<meta name="title" content="Jan Kubát - Full-Stack Web Developer - Personal Web Portoflio">
+		<meta name="description" content="This is my web portfolio. Here you can see my work that I have done. I hope you will like it.">
+		<meta name="keywords" content="Jan Kubat, portfolio, github, Honza Kubat, developer, code, blog, kubat jan, kubat honza, kubat, jan">
+		<meta name="author" content="Jan Kubat">
+		<meta name="robots" content="index, follow">
+	
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://jankubat-it.cz/">
+		<meta property="og:site_name" content="jankubat-it.cz">
+		<meta property="og:title" content="Jan Kubát - Full-Stack Web Developer - Personal Web Portoflio">
+		<meta property="og:description" content="This is my web portfolio. Here you can see my work that I have done. I hope you will like it.">
+		<meta property="og:image" content="https://jankubat-it.cz/assets/img/ogimage.webp">
+	
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://jankubat-it.cz/">
+		<meta property="twitter:title" content="Jan Kubát - Full-Stack Web Developer - Personal Web Portoflio">
+		<meta property="twitter:description" content="This is my web portfolio. Here you can see my work that I have done. I hope you will like it.">
+		<meta property="twitter:image" content="https://jankubat-it.cz/assets/img/ogimage.webp">
+
+		<!--Icon-->
+		<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#ffffff">
+		
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-SEVYR9W773');
+		</script>
     </head>
     <body>
         <div class="navbar">
             <div class="navbar-item-selected">Home</div>
-            <div class="navbar-item">Projects</div>
-            <div class="navbar-item">CV</div>
-            <div class="navbar-item">Test</div>
+            <a href="./projects.html"><div class="navbar-item">Projects</div></a>
+            <a href="./cv.html"><div class="navbar-item">CV</div></a>
         </div>
         <div class="header">
             <h1>Jan Kubát</h1>
             <h2>Full-Stack Web Developer</h2>
         </div>
-        <div class="container">
-            <div class="projects">
-                <a href="https://kopcuj.cz/"><div class="project" style="background-image: url('../assets/img/kopcuj.webp');"></div></a>
-                <div class="project" style="background-image: url('../assets/img/bakabot.webp');"></div>
-                <div class="project" style="background-image: url('../assets/img/morpheus-systems.webp');"></div>
-                <div class="project" style="background-image: url('../assets/img/jdmarket.webp');"></div>
-                <div class="project" style="background-image: url('../assets/img/habbit_tracker.webp');"></div>
-                <div class="project" style="background-image: url('../assets/img/404.webp');"></div>
-            </div>
+        
+        <div class="projects">
+            <a href="https://kopcuj.cz/"><div class="project" style="background-image: url('./img/kopcuj.webp');"></div><h2>Kopcuj</h2></a>
+            <a href="https://github.com/jankubatt/bakabot"><div class="project" style="background-image: url('./img/bakabot.webp');"></div><h2>BakaBot</h2></a>
+            <a href="https://morpheus-systems.cronitorstatus.com/"><div class="project" style="background-image: url('./img/morpheus-systems.webp');"></div><h2>Morpheus Systems</h2></a>
         </div>
+
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hey there! Welcome to my web portfolio! I'm <a href="https://github.com/jankubatt">Jan Kubat</a>, a 19-year-old full-stack web developer who's been tinkering with 
+                code since 2017. I'm super excited to show you what I've been up to lately!
+            </p>
+            <p>
+                I've worked on some pretty cool projects recently, like <a href="https://github.com/Kopcuj">Kopcuj</a>, 
+                <a href="https://github.com/jankubatt/bakabot">BakaBot</a>, and 
+                <a href="https://morpheus-systems.cronitorstatus.com/">MorpheusSystems</a>. Each project has challenged 
+                me in different ways and helped me grow as a developer. Right now, I'm working at 
+                <a href="https://crudex.cz/">Crudex</a>, where I get to work with an amazing team of talented folks.
+            </p>
+            <p>
+                I'm all about keeping things simple and organized. I believe that the best code is code that's easy to read and maintain. 
+                And, let's be real, who doesn't love a minimalist design? ;)
+            </p>
+            <p>
+                One of my favorite things about being a web developer is that there's always something new to learn. I'm a fast learner 
+                and always eager to take on new challenges. Plus, I'm pretty precise when it comes to coding - I like to make sure 
+                everything is just right.
+            </p>
+            <p>
+                Thanks for checking out my portfolio! I hope we get a chance to work together soon!
+            </p>
+        </div>
+      
+        <div class="footer">
+            <a href="mailto:jankubat77@gmail.com">jankubat77@gmail.com</a>
+            <a href="https://github.com/jankubatt">Github</a>
+            <a href="https://www.linkedin.com/in/jankubatt/">LinkedIn</a>
+            <p>&copy; Jan Kubát <span id="year"></span></p>
+        </div>
+
+        <script src="./js/index.js"></script>
+        <script src="./js/background.js"></script>
     </body>
 </html>
