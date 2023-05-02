@@ -1,22 +1,16 @@
-<!--
-jankubat-it.cz
-Author: Jan Kubat
-Description: My minimalist personal web
-Dev start: 26/08/2020
-COPYRIGHT Jan Kubat 2020
--->
 <!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles.css">
 
-<html lang="cs">
-	<head>
-		<meta charset="UTF-8">
+        <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 | 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘</title>
+		<title>Jan Kubát - Full-Stack Web Developer - Personal Web Portoflio</title>
 	
 		<!-- Primary Meta Tags -->
-		<meta name="title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 | 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘">
-		<meta name="description" content="Čau! Moje technické portfolio. Momentálně studuji IT a počítačové sítě. Programování je moje hobby i moje práce. Programuji od roku 2017. Mám rád organizovanou a kvalitní práci.">
-		<meta name="keywords" content="Jan Kubat, portfolio, github, Honza Kubat, developer, programovani, blog, kubat jan, kubat honza">
+		<meta name="title" content="Jan Kubát - Full-Stack Web Developer - Personal Web Portoflio">
+		<meta name="description" content="This is my web portfolio. Here you can see my work that I have done. I hope you will like it.">
+		<meta name="keywords" content="Jan Kubat, portfolio, github, Honza Kubat, developer, code, blog, kubat jan, kubat honza, kubat, jan">
 		<meta name="author" content="Jan Kubat">
 		<meta name="robots" content="index, follow">
 	
@@ -24,30 +18,24 @@ COPYRIGHT Jan Kubat 2020
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://jankubat-it.cz/">
 		<meta property="og:site_name" content="jankubat-it.cz">
-		<meta property="og:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 | 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘">
-		<meta property="og:description" content="Čau! Moje technické portfolio. Momentálně studuji IT a počítačové sítě. Programování je moje hobby i moje práce. Programuji od roku 2017. Mám rád organizovanou a kvalitní práci.">
-		<meta property="og:image" content="https://jankubat-it.cz/assets/img/ogimage.webp">
+		<meta property="og:title" content="Jan Kubát - Full-Stack Web Developer - Personal Web Portoflio">
+		<meta property="og:description" content="This is my web portfolio. Here you can see my work that I have done. I hope you will like it.">
+		<meta property="og:image" content="https://jankubat-it.cz/img/og.webp">
 	
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image">
 		<meta property="twitter:url" content="https://jankubat-it.cz/">
-		<meta property="twitter:title" content="𝙹𝚊𝚗 𝙺𝚞𝚋𝚊𝚝 | 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘">
-		<meta property="twitter:description" content="Čau! Moje technické portfolio. Momentálně studuji IT a počítačové sítě. Programování je moje hobby i moje práce. Programuji od roku 2017. Mám rád organizovanou a kvalitní práci.">
-		<meta property="twitter:image" content="https://jankubat-it.cz/assets/img/ogimage.webp">
+		<meta property="twitter:title" content="Jan Kubát - Full-Stack Web Developer - Personal Web Portoflio">
+		<meta property="twitter:description" content="This is my web portfolio. Here you can see my work that I have done. I hope you will like it.">
+		<meta property="twitter:image" content="https://jankubat-it.cz/img/og.webp">
 
 		<!--Icon-->
-		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.webp">
-		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.webp">
-		<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.webp">
-		<link rel="manifest" href="/assets/favicons/site.webmanifest">
-		<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
-		<link rel="shortcut icon" href="/assets/favicons/favicon.ico">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-		<meta name="theme-color" content="#ffffff">
-
-		<link href="/assets/lib/bootstrap.min.css" rel="stylesheet">
-		<link href="/assets/css/style.css" rel="stylesheet">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#ffffff">
 		
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -56,174 +44,59 @@ COPYRIGHT Jan Kubat 2020
 
 			gtag('config', 'G-SEVYR9W773');
 		</script>
-	</head>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-item-selected">Home</div>
+            <a href="./projects.html"><div class="navbar-item">Projects</div></a>
+            <a href="./cv.html"><div class="navbar-item">CV</div></a>
+        </div>
+        <div class="header">
+            <h1>Jan Kubát</h1>
+            <h2>Full-Stack Web Developer</h2>
+        </div>
+        
+        <div class="projects">
+            <a href="https://kopcuj.cz/"><div class="project" style="background-image: url('./img/kopcuj.webp');"></div><h2>Kopcuj</h2></a>
+            <a href="https://github.com/jankubatt/bakabot"><div class="project" style="background-image: url('./img/bakabot.webp');"></div><h2>BakaBot</h2></a>
+            <a href="https://morpheus-systems.cronitorstatus.com/"><div class="project" style="background-image: url('./img/morpheus-systems.webp');"></div><h2>Morpheus Systems</h2></a>
+        </div>
 
-	<body>
-		<!--Navbar-->
-		<div id="navbar">
-			<div class="navbar navbar-custom fixed-top navbar-expand-lg navbar-light">
-				<a href="#"><h3 class="navbar-brand">JK</h3></a>
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hey there! Welcome to my web portfolio! I'm <a href="https://github.com/jankubatt">Jan Kubat</a>, a 19-year-old full-stack web developer who's been tinkering with 
+                code since 2017. I'm super excited to show you what I've been up to lately!
+            </p>
+            <p>
+                I've worked on some pretty cool projects recently, like <a href="https://github.com/Kopcuj">Kopcuj</a>, 
+                <a href="https://github.com/jankubatt/bakabot">BakaBot</a>, and 
+                <a href="https://morpheus-systems.cronitorstatus.com/">MorpheusSystems</a>. Each project has challenged 
+                me in different ways and helped me grow as a developer. Right now, I'm working at 
+                <a href="https://crudex.cz/">Crudex</a>, where I get to work with an amazing team of talented folks.
+            </p>
+            <p>
+                I'm all about keeping things simple and organized. I believe that the best code is code that's easy to read and maintain. 
+                And, let's be real, who doesn't love a minimalist design? ;)
+            </p>
+            <p>
+                One of my favorite things about being a web developer is that there's always something new to learn. I'm a fast learner 
+                and always eager to take on new challenges. Plus, I'm pretty precise when it comes to coding - I like to make sure 
+                everything is just right.
+            </p>
+            <p>
+                Thanks for checking out my portfolio! I hope we get a chance to work together soon!
+            </p>
+        </div>
+      
+        <div class="footer">
+            <a href="mailto:jankubat77@gmail.com">jankubat77@gmail.com</a>
+            <a href="https://github.com/jankubatt">Github</a>
+            <a href="https://www.linkedin.com/in/jankubatt/">LinkedIn</a>
+            <p>&copy; Jan Kubát <span id="year"></span></p>
+        </div>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse navbar-text-light" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link text-dark" href="#projectsJquery">Projekty</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark" href="#aboutJquery">O mně</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark" href="#contactJquery">Kontakt</a>
-						</li>
-						<li>
-							<div class="dropdown">
-								<button class="btn dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									🇨🇿
-								</button>
-								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								  <a class="dropdown-item" href="/en/">🇺🇸</a>
-								  <a class="dropdown-item" href="/index.html">🇨🇿</a>
-								</div>
-							  </div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<!--Header-->
-		<div id="header" class="text-center d-flex justify-content-center flex-column ">
-			<div class="row align-items-baseline">
-				<div class="col text-right">
-					<img src="/assets/img/brand.webp" alt="" class="img-fluid brand main-header" width="200px" height="200px">
-				</div>
-				<div class="col text-left">
-					<h1 class="header-h1">Jan Kubát</h1>
-					<h2 class="header-h2">Developer a student</h2>
-				</div>
-			</div>
-			
-			<div class="btn-header">
-				<div class="btn-group">
-					<a class="m-2 btn btn-outline-dark btn-lg" href="https://github.com/jankubatt/" target="blank_">GitHub <i class="fab fa-github"></i></a>
-					<a class="m-2 btn btn-outline-dark btn-lg" href="#projectsJquery" target="blank_">Projekty <i class="fas fa-laptop-code"></i></a>
-					<a class="m-2 btn btn-outline-dark btn-lg" href="https://linkedin.com/in/jankubatt/" target="blank_">LinkedIn <i class="fab fa-linkedin"></i></a>
-				</div>
-				<br>
-				<div class="btn-group">
-					<a class="m-2 btn btn-outline-dark btn-lg" href="/certificates" target="blank_">Certifikáty <i class="fas fa-certificate"></i></a>
-					<a class="m-2 btn btn-outline-dark btn-lg" href="/blog/knihy" target="blank_">Knihy <i class="fas fa-book"></i></a>
-					<a class="m-2 btn btn-outline-dark btn-lg" href="/blog/" target="blank_">Blog <i class="fas fa-globe"></i></a>
-				</div>
-			</div>
-		</div>
-
-		<a id="projectsJquery"></a>
-
-		<!--Portfolio-->
-		<div id="projects">
-			<h1 class="text-center mb-5">Projekty 📊</h1>
-			<div class="row text-center">
-				<div class="container">
-					<div class="card-deck">
-						<div class="card">
-							<img class="card-img-top" src="/assets/img/kopcuj.webp" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title">Kopcuj</h5>
-								<p class="card-text">Interaktivní mapa s kopci Českého Středohoří. Slouží k organizaci pokořených kopců a ke komunikování s komunitou lidí.</p>
-							</div>
-							<div class="card-footer">
-								<a class="btn btn-outline-dark float-left d-inline" href="https://github.com/Kopcuj" target="blank_">GitHub <i class="fab fa-github"></i></a>
-
-							</div>
-						</div>
-						<div class="card">
-							<img class="card-img-top" src="/assets/img/morpheus-systems.webp" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title">Morpheus Systems</h5>
-								<p class="card-text">VPS, IoT, aplikace</p>
-							</div>
-							<div class="card-footer">
-								<a class="btn btn-outline-dark float-left d-inline" href="https://morpheus-systems.cronitorstatus.com/" target="blank_">Web <i class="fas fa-globe"></i></a>
-							</div>
-						</div>
-						<div class="card">
-							<img class="card-img-top" src="/assets/img/bakabot.webp" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title">BakaBot</h5>
-								<p class="card-text">Discord Bot, který sleduje suplování v systému Bakaláři a pošle notifikaci při jeho změně.</p>
-							</div>
-							<div class="card-footer">
-								<a class="btn btn-outline-dark float-left d-inline" href="https://github.com/jankubatt/BakaBot" target="blank_">GitHub <i class="fab fa-github"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="text-center mt-5">
-				<a class="btn btn-outline-dark" href="/blog/projekty" target="_blank">Další projekty <span class="badge badge-danger">6</span></a>
-			</div>
-		</div>
-
-		<h1 class="text-center mb-5 mt-5">Úspěchy 🏆</h1>
-
-		<!--accomplishments-->
-
-		<div class="container accomplisments d-flex justify-content-center text-left">
-			<ul>
-				<li>🥇2. místo v kraji - Soutěž v programování 2021, top 10 stát</li>
-				<li>🥈3. místo v kraji - Soutěž v programování 2022, top 10 stát</li>
-				<li>🥉Cisco NAG IoT 2020 - Soutěž internetu věcí</li>
-			</ul>
-		</div>
-
-		<a id="aboutJquery"></a>
-
-		<!--About Me-->
-		<div id="about">
-			<div class="row text-center">
-				<div class="col-md-6 center">
-					<img class="img-fluid" src="https://github-readme-stats.vercel.app/api?username=jankubatt&title_color=000000" alt="github stats">
-				</div>
-				<div class="col-md-6">
-					<p class="about-text">
-						Zdravím! Jmenuji se Honza. Momentálně studuji IT a počítačové sítě. Programování je moje hobby
-						i moje práce. Programuji od roku 2017. Mám rád organizovanou a kvalitní práci.
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<a id="contactJquery"></a>
-
-		<!--Contact-->
-		<div id="contact">
-			<p class="contact-text">Zaujal jsem Vás? Můžete mě kontaktovat!
-			</p>
-			<div class="contact-text-bottom">
-				<i class="far fa-envelope"></i> jankubat77@gmail.com<br>
-				<i class="fab fa-discord"></i> Morpheus Stathis#8839
-			</div>
-		</div>
-
-		<!--Footer-->
-		<div id="footer">
-			<div class="row text-center">
-				<div class="col">
-					<p>&copy; Jan Kubat</p>
-				</div>
-			</div>
-		</div>
-
-		<script src="/assets/lib/848da1e5f7.js"></script>
-		<script src="/assets/lib/jquery-3.5.1.min.js"></script>
-		<script src="/assets/lib/bootstrap.min.js"></script>
-		<script src="/assets/js/index.js"></script>
-	</body>
+        <script src="./js/index.js"></script>
+        <script src="./js/background.js"></script>
+    </body>
 </html>
