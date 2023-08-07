@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Jan Kubát - Webový vývojář</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="">Projekty</a>
+        <a href="">Blog</a>
+        <a href="">O mně</a>
+        <a href="">Kontakt</a>
+    </div>
+    <div id="main">
+        
+        <div id="header">
+            <h1>Já jsem <span>Jan Kubát</span></h1>
+            <h2>Webový vývojář, který se rád věnuje koníčkům.
+                Prohlédněte si mou cestu <span id="experience-year"></span> letou praxí.</h2>
+            <div id="header-cta">
+                <a href="" class="btn btn-primary">Zjistit více</a>
+                <a href="" class="btn btn-secondary">Projekty</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="bionic-reading.js"></script>
+    <script>
+        var year = new Date().getFullYear() - 2017;
+        document.getElementById("experience-year").innerText = year;
+    </script>
+</body>
+</html>
