@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Jan Kubát - Webový vývojář, kutil a hobbyista">
+    <meta name="description" content="Prohlédněte si mé osobní web portfolio, které popisuje moji cestu životem a praxí výojáře webu. Najdete zde mé projekty společně s mými názory na mém blogu.">
+    <meta name="keywords" content="Jan Kubat, portfolio, github, Honza Kubat, developer, code, blog, kubat jan, kubat honza, kubat, jan, web, osobní">
+    <meta name="author" content="Jan Kubat">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jankubat-it.cz/">
+    <meta property="og:site_name" content="jankubat-it.cz">
+    <meta property="og:title" content="Jan Kubát - Webový vývojář, kutil a hobbyista">
+    <meta property="og:description" content="Prohlédněte si mé osobní web portfolio, které popisuje moji cestu životem a praxí výojáře webu. Najdete zde mé projekty společně s mými názory na mém blogu.">
+    <meta property="og:image" content="https://jankubat-it.cz/img/og.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jankubat-it.cz/">
+    <meta property="twitter:title" content="Jan Kubát - Webový vývojář, kutil a hobbyista">
+    <meta property="twitter:description" content="Prohlédněte si mé osobní web portfolio, které popisuje moji cestu životem a praxí výojáře webu. Najdete zde mé projekty společně s mými názory na mém blogu.">
+    <meta property="twitter:image" content="https://jankubat-it.cz/img/og.webp">
+
     <link rel="stylesheet" href="styles.css">
 
-    <title>Jan Kubát - Webový vývojář</title>
+    <script src="https://kit.fontawesome.com/848da1e5f7.js" crossorigin="anonymous"></script>
+
+    <title>Jan Kubát - Webový vývojář, kutil a hobbyista</title>
 </head>
 <body>
     <div id="navbar">
@@ -16,14 +48,133 @@
         <a href="">Kontakt</a>
     </div>
     <div id="main">
+        <div id="header-wrapper">
+            <div id="header">
+                <h1>Já jsem <span>Jan Kubát</span></h1>
+                <h2>Webový vývojář, který se rád věnuje koníčkům.
+                    Prohlédněte si mou cestu <span id="experience-year"></span> letou praxí.</h2>
+                <div id="header-cta">
+                    <a href="kontakt.html" class="btn btn-primary">Napište mi</a>
+                </div>
+            </div>
+        </div>
         
-        <div id="header">
-            <h1>Já jsem <span>Jan Kubát</span></h1>
-            <h2>Webový vývojář, který se rád věnuje koníčkům.
-                Prohlédněte si mou cestu <span id="experience-year"></span> letou praxí.</h2>
-            <div id="header-cta">
-                <a href="" class="btn btn-primary">Zjistit více</a>
-                <a href="" class="btn btn-secondary">Projekty</a>
+        <div id="portfolio-wrapper">
+            <h2>Portfolio</h2>
+
+            <div id="portfolio">
+                <div class="portfolio-item">
+                    <img src="img/kopcuj.webp" alt="">
+                    <div>
+                        <h3>Kopcuj</h3>
+                        <a href="https://kopcuj.cz/" class="btn btn-primary">Web</a>
+                    </div>
+                </div>
+        
+                <div class="portfolio-item">
+                    <img src="img/lamataxi.webp" alt="">
+                    <div>
+                        <h3>LamaTaxi</h3>
+                        <a href="https://lamataxi.cz/" class="btn btn-primary">Web</a>
+                    </div>
+                </div>
+        
+                <div class="portfolio-item">
+                    <img src="img/simplereserve.webp" alt="">
+                    <div>
+                        <h3>SimpleReserve</h3>
+                        <a href="https://simplereserve.cz/" class="btn btn-primary">Web</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="exp-wrapper">
+            <h2>Praxe</h2>
+            
+            <div id="exp">
+                <div class="exp-item">
+                    <img src="img/crudex.webp" alt="">
+
+                    <div>
+                        <h3>Crudex</h3>
+                        <p><span id="crudex"></span></p>
+                        <p><span id="crudex-time"></span></p>
+                    </div>
+                </div>
+
+                <div class="exp-line"></div>
+
+                <div class="exp-item">
+                    <img src="img/nfctron.webp" alt="">
+
+                    <div>
+                        <h3>NFCtron</h3>
+                        <p><span id="nfctron"></span></p>
+                        <p><span id="nfctron-time"></span></p>
+                    </div>
+                </div>
+
+                <div class="exp-line"></div>
+
+                <div class="exp-item">
+                    <img src="img/dgz.webp" alt="">
+
+                    <div>
+                        <h3>DGZGold</h3>
+                        <p id="dgz"></p>
+                        <p><span id="dgz-time"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about-me">
+            <h2>O mně</h2>
+            
+            <div class="about-me-content">
+                <p>
+                    Jmenuji se Jan Kubát. Živím se výhradně vývojem a tvorbou webových aplikací, 
+                    konkrétně stavbou backendu. Moje cesta programátora začala již na základní škole, 
+                    kde jsem na gymplu chodil do kroužků a doma si sám programoval v C#. Po základní škole 
+                    jsem věděl, že chci studovat IT. Šel jsem na SPSUL v Ústí nad Labem. V době studia
+                     na této škole jsem se zůčastnil dobrého počtu soutěží (<a href="https://www.talentovani.cz/souteze/soutez-v-programovani">MŠMT</a>, 
+                     <a href="https://netacad-games.cz/index.php?id=kategorie-iot">NaG IoT</a>). Absolvoval 
+                     jsem 2 praxe. První v Praze u <a href="https://www.nfctron.com/cs/">NFCtronu</a> a druhou u <a href="https://km21.cz/">KM21 s.r.o.</a> 
+                     Tyto praxe mi daly mnoho zkušeností a poznatků k sobě samému. Za což zmíněným fírmám děkuji. Nakonec 
+                     jsem úspěšně odmaturoval s vyznamenáním.
+                </p>
+                <p>
+                    Nyní se plně věnuji programování a studuji UJEP, také v Ústí nad Labem. Mimo programování
+                     se rád věnuji renovaci a opravám všeho možného. To zahrnuje technologie, auta a motorky,
+                      zahradničení apod. Pokud jsem vás zaujal, tak mě můžete kontaktovat na kartě 
+                      <a href="/kontakt.html">Kontakt</a>. Pokud vás zajímají všechny moje projekty, tak karta <a href="/projekty.html">Projekty</a>.
+                </p>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h2>Kontakt</h2>
+            
+            <p><i class="fa-solid fa-envelope"></i> &nbsp;&nbsp;jankubat77@gmail.com</p>
+            <p><i class="fa-brands fa-discord"></i> &nbsp;morpheusstathis</p>
+            <p><i class="fa-brands fa-linkedin"></i> &nbsp;&nbsp;jankubatt</p>
+        </div>
+
+        <div id="footer">
+            <p>© 2023 Jan Kubát</p>
+
+            <div id="footer-social">
+                <a href="https://www.linkedin.com/in/jankubatt/"><i class="fa-brands fa-linkedin"></i> jankubatt</a>
+                <a href="https://github.com/jankubatt"><i class="fa-brands fa-github"></i> jankubatt</a>
+                <a><i class="fa-brands fa-discord"></i> morpheusstathis</a>
+            </div>
+
+            <div id="footer-nav">
+                <a href="">Projekty</a>
+                <a href="">Blog</a>
+                <a href="">O mně</a>
+                <a href="">Kontakt</a>
             </div>
         </div>
     </div>
@@ -32,6 +183,51 @@
     <script>
         var year = new Date().getFullYear() - 2017;
         document.getElementById("experience-year").innerText = year;
+
+        document.getElementById("crudex").innerText = expLength(new Date(2023, 1, 1), new Date());
+        document.getElementById("crudex-time").innerText = expTime(new Date(2023, 1, 1), new Date());
+
+        document.getElementById("nfctron").innerText = expLength(new Date(2022, 3, 1), new Date(2022, 6, 1));
+        document.getElementById("nfctron-time").innerText = expTime(new Date(2022, 3, 1), new Date(2022, 6, 1));
+
+        document.getElementById("dgz").innerText = expLength(new Date(2020, 4, 1), new Date(2020, 5, 1));
+        document.getElementById("dgz-time").innerText = expTime(new Date(2020, 4, 1), new Date(2020, 5, 1));
+
+        function expLength(start, end) {
+            var now = new Date();
+            var month = new Date(end - start).getMonth() + 1;
+            var year = parseInt(month / 12);
+
+            var monthText = "";
+            var yearText = "";
+
+            if (month === 1) {
+                monthText = `${month} měsíc`
+            }
+            else if (month < 5) {
+                monthText = `${month} měsíce`
+            }
+            else {
+                monthText = `${month} měsíců`
+            }
+
+            if (year === 1) {
+                yearText = `${year} rok `
+            }
+            else if (year < 5 && year > 1) {
+                yearText = `${year} roky `
+            }
+            else if (year > 4) {
+                yearText = `${year} let `
+            }
+            
+            return `${yearText}${monthText}` 
+        }
+
+        function expTime(start, end) {
+            var months = ["Led", "Únr", "Bře", "Dub", "Kvě", "Čvn", "Čvc", "Srp", "Zář", "Říj", "Lis", "Pro"];
+            return `${months[start.getMonth() - 1]} ${start.getFullYear()} - ${months[end.getMonth()-1]} ${end.getFullYear()}`
+        }
     </script>
 </body>
 </html>
