@@ -98,15 +98,17 @@ canvas {
 
 .header h1 {
     font-family: RobotoThin;
-    font-size: 10rem;
-    font-weight: lighter;
+    font-size: 180px;
+    font-weight: bolder;
     margin: 0;
     padding: 0;
+    letter-spacing: -12px;
 }
 
 .header h2 {
-    font-family: RobotoBold;
-    font-size: 2rem;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: 36px;
     margin: 0;
     padding: 0;
 }
