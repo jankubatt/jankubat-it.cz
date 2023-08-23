@@ -9,22 +9,32 @@
 
 <url>
   <loc>https://jankubat-it.cz/</loc>
-  <lastmod>2023-05-02T08:09:59+00:00</lastmod>
+  <lastmod>2023-08-23T11:34:58+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://jankubat-it.cz/projects.html</loc>
-  <lastmod>2023-05-02T08:09:59+00:00</lastmod>
+  <lastmod>2023-08-23T11:34:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://jankubat-it.cz/cv.html</loc>
-  <lastmod>2023-05-02T08:09:59+00:00</lastmod>
+  <loc>https://jankubat-it.cz/blog.html</loc>
+  <lastmod>2023-08-23T11:34:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://jankubat-it.cz/index.html</loc>
-  <lastmod>2023-05-02T08:09:59+00:00</lastmod>
+  <loc>https://jankubat-it.cz/contact.html</loc>
+  <lastmod>2023-08-23T11:34:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jankubat-it.cz/blog/obecne/2023-08-23-blog.html</loc>
+  <lastmod>2023-08-23T11:34:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jankubat-it.cz/blog/obecne/index.html</loc>
+  <lastmod>2023-08-23T11:34:58+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
