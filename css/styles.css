@@ -333,3 +333,47 @@ a {
     margin: 0;
     padding: 0;
 }
+
+@media only screen and (max-width: 1000px) {
+    #navbar {
+        justify-content: center;
+    }
+
+    #header-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    #portfolio {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    #contact {
+        width: auto;
+    }
+
+    .project {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .project-content {
+        margin: 0;
+    }
+
+    .projects-container {
+        margin: 0;
+        gap: 5em;
+    }
+
+    .project-image {
+        height: auto;
+        width: 100%;
+    }
+
+    .project-buttons {
+        margin-top: 1em;
+    }
+}

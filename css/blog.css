@@ -64,6 +64,7 @@ hr {
 .articles {
     width: 80%;
     padding-right: 2em;
+    order: 1;
 }
 
 .article {
@@ -77,8 +78,8 @@ hr {
 }
 
 .article img {
-    height: 200px;
-    object-fit: cover;
+    width: 15em;
+    object-fit: contain;
 }
 
 .article-content {
@@ -87,6 +88,7 @@ hr {
     justify-content: space-between;
     gap: 1em;
     width: 100%;
+    flex-grow: 3;
 }
 
 .article-title {
@@ -103,10 +105,11 @@ hr {
 
 .article-page {
     width: 80%;
-    padding: 1em;
     margin-right: 2em;
+    padding: 1em;
     background-color: white;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    order: 1;
 }
 
 .article-page h1 {
@@ -125,6 +128,7 @@ hr {
     justify-content: flex-start;
     gap: 10em;
     margin-right: 1em;
+    order: 2;
 }
 
 .rubrics {
@@ -155,4 +159,56 @@ hr {
     padding: 1em;
     width: 100%;
     background-color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .sidebar {
+        width: auto;
+        order: 1;
+        gap: 5px;
+        margin: 0 1em;
+    }
+
+    .rubrics {
+        margin: 0;
+        padding-left: 1em;
+        width: 100%;
+    }
+
+    .author {
+        display: none;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .articles {
+        width: 100%;
+        padding: 0;
+        order: 2;
+        margin-top: 1em;
+    }
+
+    .article {
+        flex-direction: column;
+    }
+
+    .article img {
+        width: 100%;
+    }
+
+    .article-page {
+        width: auto;
+        padding: 1em;
+        margin: 0;
+        order: 2;
+        margin-top: 1em;
+    }
+
+    .article-page img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
 }
