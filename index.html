@@ -65,7 +65,7 @@
                 <h2>Webový vývojář, který se rád věnuje koníčkům.
                     Prohlédněte si mou cestu <span id="experience-year"></span> letou praxí.</h2>
                 <div id="header-cta">
-                    <a href="kontakt.html" class="btn btn-primary">Napište mi</a>
+                    <a href="contact.html" class="btn btn-primary">Napište mi</a>
                 </div>
             </div>
         </div>
@@ -235,7 +235,12 @@
         }
 
         function expTime(start, end) {
+            var now = new Date();
             var months = ["Led", "Únr", "Bře", "Dub", "Kvě", "Čvn", "Čvc", "Srp", "Zář", "Říj", "Lis", "Pro"];
+
+            if (now.getMilliseconds() == end.getMilliseconds()) {
+                return `${months[start.getMonth() - 1]} ${start.getFullYear()} - nyní`
+            }
             return `${months[start.getMonth() - 1]} ${start.getFullYear()} - ${months[end.getMonth()-1]} ${end.getFullYear()}`
         }
     </script>
