@@ -334,6 +334,20 @@ a {
     padding: 0;
 }
 
+.photography-container {
+    display: flex;
+    gap: 3em;
+    margin: 0 10em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.photography-container img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
 @media only screen and (max-width: 1000px) {
     #navbar {
         justify-content: center;
