@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: white;
     color: rgb(12, 12, 12);
 }
 
@@ -34,7 +34,7 @@ hr {
 .navbar {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
@@ -44,15 +44,23 @@ hr {
 
 .navbar h1 {
     margin: 0;
+    font-size: 5rem;
+    font-weight: lighter;
 }
 
 .navbar h2 {
     font-weight: lighter;
+    font-style: italic;
 }
 
 .navbar img {
-    height: 100px;
+    height: 5rem;
     object-fit: cover;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
 }
 
 .main {
@@ -104,7 +112,6 @@ hr {
 }
 
 .article-page {
-    width: 80%;
     margin-right: 2em;
     padding: 1em;
     background-color: white;
@@ -112,12 +119,21 @@ hr {
     order: 1;
 }
 
+.article-page img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 .article-page h1 {
     margin: 0;
+    font-size: 3rem;
 }
 
 .article-page p {
     text-align: justify;
+    font-size: 1.5rem;
+    font-weight: lighter;
 }
 
 .sidebar {
