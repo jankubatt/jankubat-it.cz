@@ -205,35 +205,19 @@
         document.getElementById("dgz-time").innerText = expTime(new Date(2020, 4, 1), new Date(2020, 5, 1));
 
         function expLength(start, end) {
-            var now = new Date();
-            var month = new Date(end - start).getMonth() + 1;
-            var year = parseInt(month / 12);
+            var monthsDiff = (end.getFullYear() - start.getFullYear()) * 12;
+            monthsDiff -= start.getMonth() + 1;
+            monthsDiff += end.getMonth() + 1;
 
-            var monthText = "";
-            var yearText = "";
+            var years = Math.floor(monthsDiff / 12);
+            var months = (monthsDiff % 12) + 1;
 
-            if (month === 1) {
-                monthText = `${month} měsíc`
-            }
-            else if (month < 5) {
-                monthText = `${month} měsíce`
-            }
-            else {
-                monthText = `${month} měsíců`
-            }
+            var monthText = months === 1 ? `${months} měsíc` : months < 5 ? `${months} měsíce` : `${months} měsíců`;
+            var yearText = years === 1 ? `${years} rok ` : years < 5 && years > 1 ? `${years} roky ` : years === 0 ? "" : `${years} let `;
 
-            if (year === 1) {
-                yearText = `${year} rok `
-            }
-            else if (year < 5 && year > 1) {
-                yearText = `${year} roky `
-            }
-            else if (year > 4) {
-                yearText = `${year} let `
-            }
-            
-            return `${yearText}${monthText}` 
+            return `${yearText}${monthText}`;
         }
+
 
         function expTime(start, end) {
             var now = new Date();
