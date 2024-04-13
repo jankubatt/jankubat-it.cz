@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2DZYERJXFW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2DZYERJXFW');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Jan Kubát - Webový vývojář, kutil a hobbyista">
+    <meta name="description" content="Prohlédněte si mé osobní web portfolio, které popisuje moji cestu životem a praxí výojáře webu. Najdete zde mé projekty společně s mými názory na mém blogu.">
+    <meta name="keywords" content="Jan Kubat, portfolio, github, Honza Kubat, developer, code, blog, kubat jan, kubat honza, kubat, jan, web, osobní">
+    <meta name="author" content="Jan Kubat">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jankubat-it.cz/">
+    <meta property="og:site_name" content="jankubat-it.cz">
+    <meta property="og:title" content="Jan Kubát - Webový vývojář, kutil a hobbyista">
+    <meta property="og:description" content="Prohlédněte si mé osobní web portfolio, které popisuje moji cestu životem a praxí výojáře webu. Najdete zde mé projekty společně s mými názory na mém blogu.">
+    <meta property="og:image" content="https://jankubat-it.cz/img/og.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jankubat-it.cz/">
+    <meta property="twitter:title" content="Jan Kubát - Webový vývojář, kutil a hobbyista">
+    <meta property="twitter:description" content="Prohlédněte si mé osobní web portfolio, které popisuje moji cestu životem a praxí výojáře webu. Najdete zde mé projekty společně s mými názory na mém blogu.">
+    <meta property="twitter:image" content="https://jankubat-it.cz/img/og.webp">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <script src="https://kit.fontawesome.com/848da1e5f7.js" crossorigin="anonymous"></script>
+
+    <title>Jan Kubát - Webový vývojář, kutil a hobbyista</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html">Domů</a>
+        <a href="projects.html">Projekty</a>
+        <a href="photography.html">Fotografie</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="https://github.com/jankubatt">Github</a>
+    </div>
+    <div id="main">
+        
+
+        <div id="footer">
+            <p>© 2023 Jan Kubát</p>
+
+            <div id="footer-social">
+                <a href="https://www.linkedin.com/in/jankubatt/"><i class="fa-brands fa-linkedin"></i> jankubatt</a>
+                <a href="https://github.com/jankubatt"><i class="fa-brands fa-github"></i> jankubatt</a>
+                <a><i class="fa-brands fa-discord"></i> morpheusstathis</a>
+            </div>
+
+            <div id="footer-nav">
+                <a href="projects.html">Projekty</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Kontakt</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="bionic-reading.js"></script>
+    <script>
+        var year = new Date().getFullYear() - 2017;
+        document.getElementById("experience-year").innerText = year;
+
+        document.getElementById("crudex").innerText = expLength(new Date(2023, 1, 1), new Date());
+        document.getElementById("crudex-time").innerText = expTime(new Date(2023, 1, 1), new Date());
+
+        document.getElementById("nfctron").innerText = expLength(new Date(2022, 3, 1), new Date(2022, 6, 1));
+        document.getElementById("nfctron-time").innerText = expTime(new Date(2022, 3, 1), new Date(2022, 6, 1));
+
+        document.getElementById("dgz").innerText = expLength(new Date(2020, 4, 1), new Date(2020, 5, 1));
+        document.getElementById("dgz-time").innerText = expTime(new Date(2020, 4, 1), new Date(2020, 5, 1));
+
+        function expLength(start, end) {
+            var monthsDiff = (end.getFullYear() - start.getFullYear()) * 12;
+            monthsDiff -= start.getMonth() + 1;
+            monthsDiff += end.getMonth() + 1;
+
+            var years = Math.floor(monthsDiff / 12);
+            var months = (monthsDiff % 12) + 1;
+
+            var monthText = months === 1 ? `${months} měsíc` : months < 5 ? `${months} měsíce` : `${months} měsíců`;
+            var yearText = years === 1 ? `${years} rok ` : years < 5 && years > 1 ? `${years} roky ` : years === 0 ? "" : `${years} let `;
+
+            return `${yearText}${monthText}`;
+        }
+
+
+        function expTime(start, end) {
+            var now = new Date();
+            var months = ["Led", "Únr", "Bře", "Dub", "Kvě", "Čvn", "Čvc", "Srp", "Zář", "Říj", "Lis", "Pro"];
+
+            if (now.getMilliseconds() == end.getMilliseconds()) {
+                return `${months[start.getMonth() - 1]} ${start.getFullYear()} - nyní`
+            }
+            return `${months[start.getMonth() - 1]} ${start.getFullYear()} - ${months[end.getMonth()-1]} ${end.getFullYear()}`
+        }
+    </script>
+</body>
+</html>
