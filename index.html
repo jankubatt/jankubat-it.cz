@@ -106,6 +106,18 @@
             
             <div id="exp">
                 <div class="exp-item">
+                    <img src="img/skodax.webp" alt="">
+
+                    <div>
+                        <h3>Škoda X</h3>
+                        <p><span id="skodax"></span></p>
+                        <p><span id="skodax-time"></span></p>
+                    </div>
+                </div>
+
+                <div class="exp-line"></div>
+
+                <div class="exp-item">
                     <img src="img/crudex.webp" alt="">
 
                     <div>
@@ -195,6 +207,9 @@
         var year = new Date().getFullYear() - 2017;
         document.getElementById("experience-year").innerText = year;
 
+        document.getElementById("skodax").innerText = expLength(new Date(2024, 4, 10), new Date());
+        document.getElementById("skodax-time").innerText = expTime(new Date(2024, 4, 10), new Date());
+
         document.getElementById("crudex").innerText = expLength(new Date(2023, 1, 1), new Date());
         document.getElementById("crudex-time").innerText = expTime(new Date(2023, 1, 1), new Date());
 
@@ -212,8 +227,10 @@
             var years = Math.floor(monthsDiff / 12);
             var months = (monthsDiff % 12) + 1;
 
-            var monthText = months === 1 ? `${months} měsíc` : months < 5 ? `${months} měsíce` : `${months} měsíců`;
-            var yearText = years === 1 ? `${years} rok ` : years < 5 && years > 1 ? `${years} roky ` : years === 0 ? "" : `${years} let `;
+            console.log(years, months)
+
+            var monthText = months === 1 ? `${months} měsíc` : months === 0 ? "méně než měsíc" : months < 5 ? `${months} měsíce` : `${months} měsíců`;
+            var yearText = years === 1 ? `${years} rok ` : years < 5 && years > 1 ? `${years} roky ` : years <= 0 ? "" : `${years} let `;
 
             return `${yearText}${monthText}`;
         }

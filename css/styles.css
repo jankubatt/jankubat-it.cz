@@ -390,3 +390,47 @@ a {
         margin-top: 1em;
     }
 }
+
+.line {
+    display: flex;
+    flex-direction: row;
+}
+
+.line-block {
+    width: 20px;
+    height: 20px;
+}
+
+.line-top {
+    height: 2px;
+    background-color: white;
+    width: 100%;
+    transform: translateY(-20px);
+}
+
+.line-left {
+    width: 2px;
+    background-color: white;
+    height: 100%;
+}
+
+.line-right {
+    width: 2px;
+    background-color: white;
+    height: 100%;
+    transform: translateX(18px) translateY(-20px);
+}
+
+.line-bottom {
+    height: 2px;
+    background-color: white;
+    width: 100%;
+    transform: translateY(-22px);
+}
+
+.line-mid {
+    height: 2px;
+    background-color: white;
+    width: 100%;
+    transform: translateY(-10px);
+}
