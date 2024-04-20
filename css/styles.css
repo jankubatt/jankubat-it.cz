@@ -391,46 +391,25 @@ a {
     }
 }
 
-.line {
+.additional-info {
+    display: none;
+    padding: 20px;
+    border: 1px solid var(--primary);
+    box-shadow: 5px 5px 0px 5px rgba(255,0,0,1);
+    z-index: 9999;
+}
+
+.additional-info.show {
+    display: block;
+}
+
+.portfolio {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    min-height: 50vh;
 }
 
-.line-block {
-    width: 20px;
-    height: 20px;
-}
-
-.line-top {
-    height: 2px;
-    background-color: white;
-    width: 100%;
-    transform: translateY(-20px);
-}
-
-.line-left {
-    width: 2px;
-    background-color: white;
-    height: 100%;
-}
-
-.line-right {
-    width: 2px;
-    background-color: white;
-    height: 100%;
-    transform: translateX(18px) translateY(-20px);
-}
-
-.line-bottom {
-    height: 2px;
-    background-color: white;
-    width: 100%;
-    transform: translateY(-22px);
-}
-
-.line-mid {
-    height: 2px;
-    background-color: white;
-    width: 100%;
-    transform: translateY(-10px);
+.portfolio > .col {
+    width: 45vw;
 }

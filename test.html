@@ -45,6 +45,7 @@
     <meta property="twitter:image" content="https://jankubat-it.cz/img/og.webp">
 
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/line.css">
 
     <script src="https://kit.fontawesome.com/848da1e5f7.js" crossorigin="anonymous"></script>
 
@@ -60,55 +61,111 @@
         <a href="https://github.com/jankubatt">Github</a>
     </div>
     <div id="main">
-        <div>
-            <div class="line">
-                <div class="line-block">
-                    <div class="line-left"></div>
-                    
-                    <div class="line-mid"></div>
+        <div class="portfolio">
+            <div class="col">
+                <div class="line">
+                    <span class="line-item">Portfolio</span>
+                </div>
+                <div class="line">
+                    <div class="line-block">
+                        <div class="line-left"></div>
+                        
+                        <div class="line-mid"></div>
+                    </div>
+    
+                    <span class="line-item">Web Development</span>
+                </div>
+    
+                <div class="line">
+                    <div class="line-block">
+                        <div class="line-left"></div>
+                    </div>
+    
+                    <div class="line-block">
+                        <div class="line-left"></div>
+                        <div class="line-mid"></div>
+                    </div>
+    
+                    <span class="line-item">Kopcuj.cz</span>
                 </div>
 
-                Web Development
+                <div class="line">
+                    <div class="line-block">
+                        <div class="line-left"></div>
+                    </div>
+    
+                    <div class="line-block">
+                        <div class="line-left"></div>
+                        <div class="line-mid"></div>
+                    </div>
+    
+                    <span class="line-item">SimpleReserve</span>
+                </div>
+
+                <div class="line">
+                    <div class="line-block">
+                        <div class="line-left"></div>
+                    </div>
+    
+                    <div class="line-block">
+                        <div class="line-left"></div>
+                        <div class="line-mid"></div>
+                    </div>
+    
+                    <span class="line-item">TeacherStalker</span>
+                </div>
+    
+                <div class="line">
+                    <div class="line-block">
+                        <div class="line-left"></div>
+                    </div>
+    
+                    <div class="line-block">
+                        <div class="line-left"></div>
+                        <div class="line-mid"></div>
+                    </div>
+    
+                    <span class="line-item">morse.fun</span>
+                </div>
+
+                <div class="line">
+                    <div class="line-block">
+                        <div class="line-left"></div>
+                    </div>
+    
+                    <div class="line-block">
+                        <div class="line-left-mid"></div>
+                        <div class="line-mid"></div>
+                    </div>
+    
+                    <span class="line-item">LamaTaxi</span>
+                </div>
+    
+                <div class="line">
+                    <div class="line-block">
+                        <div class="line-left"></div>
+                        <div class="line-mid"></div>
+                    </div>
+    
+                    <span class="line-item">Fotografování</span>
+                </div>
+
+                <div class="line">
+                    <div class="line-block">
+                        <div class="line-left-mid"></div>
+                        <div class="line-mid"></div>
+                    </div>
+    
+                    <span class="line-item">Ostatní</span>
+                </div>
             </div>
-
-            <div class="line">
-                <div class="line-block">
-                    <div class="line-left"></div>
+            <div class="col">
+                <div id="additional-info" class="additional-info">
+                    <h2 id="additional-info-title"></h2>
+                    <p id="additional-info-content"></p>
                 </div>
-
-                <div class="line-block">
-                    <div class="line-left"></div>
-                    <div class="line-mid"></div>
-                </div>
-
-                Kopcuj.cz
-
-
-            </div>
-
-            <div class="line">
-                <div class="line-block">
-                    <div class="line-left"></div>
-                </div>
-
-                <div class="line-block">
-                    <div class="line-left"></div>
-                    <div class="line-mid"></div>
-                </div>
-
-                LamaTaxi
-            </div>
-
-            <div class="line">
-                <div class="line-block">
-                    <div class="line-left"></div>
-                    <div class="line-mid"></div>
-                </div>
-
-                Fotografie
             </div>
         </div>
-        
 
         <div id="footer">
             <p>© 2023 Jan Kubát</p>
@@ -127,6 +184,66 @@
         </div>
     </div>
 
+    <script>
+        // JavaScript to show/hide additional information div and update content
+        document.addEventListener("DOMContentLoaded", function() {
+            var lineElements = document.querySelectorAll('.line');
+            var additionalInfo = document.getElementById('additional-info');
+            var additionalInfoTitle = document.getElementById('additional-info-title');
+            var additionalInfoContent = document.getElementById('additional-info-content');
+
+            lineElements.forEach(function(line, index) {
+                line.addEventListener("click", function() {
+                    // Example content for each item
+                    var content = [
+                        {
+                            title: "Portfolio",
+                            text: "Vítám Vás ve svém portfoliu. Všechny projekty, které jsem udělal lze najít tady."
+                        },
+                        {
+                            title: "Web Development",
+                            text: ""
+                        },
+                        {
+                            title: "Kopcuj.cz",
+                            text: ""
+                        },
+                        {
+                            title: "SimpleReserve",
+                            text: ""
+                        },
+                        {
+                            title: "TeacherStalker",
+                            text: ""
+                        },
+                        {
+                            title: "morse.fun",
+                            text: ""
+                        },
+                        {
+                            title: "LamaTaxi",
+                            text: ""
+                        },
+                        {
+                            title: "Fotografování",
+                            text: ""
+                        },
+                        {
+                            title: "Ostatní",
+                            text: ""
+                        },
+                    ];
+
+                    // Update additional info box content based on clicked item
+                    additionalInfoTitle.textContent = content[index].title;
+                    additionalInfoContent.innerHTML = content[index].text.replace(/\n/g, '<br>');
+
+                    // Show additional info box
+                    additionalInfo.classList.add('show');
+                });
+            });
+        });
+    </script>
     <script src="bionic-reading.js"></script>
     <script>
         var year = new Date().getFullYear() - 2017;
