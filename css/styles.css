@@ -347,6 +347,40 @@ a {
     object-fit: cover;
 }
 
+.additional-info {
+    display: none;
+    padding: 20px;
+    border: 1px solid var(--primary);
+    box-shadow: 5px 5px 0px 5px rgba(255,0,0,1);
+    z-index: 9999;
+}
+
+.additional-info a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.additional-info-img {
+    width: 100%;
+}
+
+.additional-info.show {
+    display: block;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.portfolio > .col {
+    width: 45vw;
+    margin-bottom: 1em;
+
+}
+
 @media only screen and (max-width: 1000px) {
     #navbar {
         justify-content: center;
@@ -389,27 +423,15 @@ a {
     .project-buttons {
         margin-top: 1em;
     }
-}
 
-.additional-info {
-    display: none;
-    padding: 20px;
-    border: 1px solid var(--primary);
-    box-shadow: 5px 5px 0px 5px rgba(255,0,0,1);
-    z-index: 9999;
-}
-
-.additional-info.show {
-    display: block;
-}
-
-.portfolio {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    min-height: 50vh;
-}
-
-.portfolio > .col {
-    width: 45vw;
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 50vh;
+    }
+    
+    .portfolio > .col {
+        width: auto;
+    }
 }

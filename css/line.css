@@ -14,6 +14,7 @@
 .line-item {
     cursor: pointer;
     text-decoration: underline;
+    font-size: 1.5em;
 }
 
 .line-top,

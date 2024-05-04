@@ -45,6 +45,7 @@
     <meta property="twitter:image" content="https://jankubat-it.cz/img/og.webp">
 
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/line.css">
 
     <script src="https://kit.fontawesome.com/848da1e5f7.js" crossorigin="anonymous"></script>
 
@@ -53,7 +54,6 @@
 <body>
     <div id="navbar">
         <a href="index.html">Domů</a>
-        <a href="projects.html">Projekty</a>
         <a href="photography.html">Fotografie</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Kontakt</a>
@@ -72,30 +72,99 @@
         </div>
         
         <div id="portfolio-wrapper">
-            <h2>Portfolio</h2>
-
-            <div id="portfolio">
-                <div class="portfolio-item">
-                    <img src="img/kopcuj.webp" alt="">
-                    <div>
-                        <h3>Kopcuj</h3>
-                        <a href="https://kopcuj.cz/" class="btn btn-primary">Web</a>
+            <div class="portfolio">
+                <div class="col">
+                    <div class="line">
+                        <span class="line-item">Portfolio</span>
+                    </div>
+                    <div class="line">
+                        <div class="line-block">
+                            <div class="line-left"></div>
+                            
+                            <div class="line-mid"></div>
+                        </div>
+        
+                        <span class="line-item">Web Development</span>
+                    </div>
+        
+                    <div class="line">
+                        <div class="line-block">
+                            <div class="line-left"></div>
+                        </div>
+        
+                        <div class="line-block">
+                            <div class="line-left"></div>
+                            <div class="line-mid"></div>
+                        </div>
+        
+                        <span class="line-item">Kopcuj.cz</span>
+                    </div>
+    
+                    <div class="line">
+                        <div class="line-block">
+                            <div class="line-left"></div>
+                        </div>
+        
+                        <div class="line-block">
+                            <div class="line-left"></div>
+                            <div class="line-mid"></div>
+                        </div>
+        
+                        <span class="line-item">SimpleReserve</span>
+                    </div>
+    
+                    <div class="line">
+                        <div class="line-block">
+                            <div class="line-left"></div>
+                        </div>
+        
+                        <div class="line-block">
+                            <div class="line-left"></div>
+                            <div class="line-mid"></div>
+                        </div>
+        
+                        <span class="line-item">TeacherStalker</span>
+                    </div>
+        
+                    <div class="line">
+                        <div class="line-block">
+                            <div class="line-left"></div>
+                        </div>
+        
+                        <div class="line-block">
+                            <div class="line-left"></div>
+                            <div class="line-mid"></div>
+                        </div>
+        
+                        <span class="line-item">morse.fun</span>
+                    </div>
+    
+                    <div class="line">
+                        <div class="line-block">
+                            <div class="line-left"></div>
+                        </div>
+        
+                        <div class="line-block">
+                            <div class="line-left-mid"></div>
+                            <div class="line-mid"></div>
+                        </div>
+        
+                        <span class="line-item">LamaTaxi</span>
+                    </div>
+        
+                    <div class="line">
+                        <div class="line-block">
+                            <div class="line-left-mid"></div>
+                            <div class="line-mid"></div>
+                        </div>
+        
+                        <span class="line-item">Fotografování</span>
                     </div>
                 </div>
-        
-                <div class="portfolio-item">
-                    <img src="img/lamataxi.webp" alt="">
-                    <div>
-                        <h3>LamaTaxi</h3>
-                        <a href="https://lamataxi.cz/" class="btn btn-primary">Web</a>
-                    </div>
-                </div>
-        
-                <div class="portfolio-item">
-                    <img src="img/simplereserve.webp" alt="">
-                    <div>
-                        <h3>SimpleReserve</h3>
-                        <a href="https://simplereserve.cz/" class="btn btn-primary">Web</a>
+                <div class="col">
+                    <div id="additional-info" class="additional-info">
+                        <h2 id="additional-info-title"></h2>
+                        <p id="additional-info-content"></p>
                     </div>
                 </div>
             </div>
@@ -250,5 +319,62 @@
             return `${months[start.getMonth() - 1]} ${start.getFullYear()} - ${months[end.getMonth()-1]} ${end.getFullYear()}`
         }
     </script>
+
+<script>
+    // JavaScript to show/hide additional information div and update content
+    document.addEventListener("DOMContentLoaded", function() {
+        var lineElements = document.querySelectorAll('.line');
+        var additionalInfo = document.getElementById('additional-info');
+        var additionalInfoTitle = document.getElementById('additional-info-title');
+        var additionalInfoContent = document.getElementById('additional-info-content');
+
+        lineElements.forEach(function(line, index) {
+            line.addEventListener("click", function() {
+                // Example content for each item
+                var content = [
+                    {
+                        title: "Portfolio",
+                        text: "Vítám Vás ve svém portfoliu. Všechny projekty mé projekty naleznete zde."
+                    },
+                    {
+                        title: "Web Development",
+                        text: "Webovému vývoji se věnuji profesně a mám ho i jako mé hobby. Níže můžete najít všechny mé větší webové projekty."
+                    },
+                    {
+                        title: "Kopcuj.cz",
+                        text: "<img class='additional-info-img' src='img/projects-kopcuj.webp'> Je webová aplikace pro turisty. Hlavním záměrem této aplikace je jakási organizace a sblížení komunity turistů. Kopcuj.cz je interaktivní mapa s kopci (momentálně pouze Českého středohoří, ale kopce lze přidávat), kde si lidé mohou zaškrtnout, na kterých všech kopcích byli. Následně lze kopce hodnotit a označovat různými tagy. Kopcuj má i svoje diskuzní fórum a systém přátel. Jedná se tedy o sociální síť a nástroj pro turisty.<br><br>Na tomto projektu jsem začal pracovat již v roce 2022 mám pocit, kde první verze byla čistě v HTML, CSS a JQuery. Jako tento web. První verze Kopcuj byla velice malá a osekaná. Jedinou funkci, kterou tento projekt měl byla vizualizace kopců pokořených. Následně uběhl rok a já se rozhodoval, jaký projekt si vybrat na ročníkovou práci ve čtvrtém ročníku na střední škole. Volba byla jasná a začal jsem s vývojem Kopcuj 2. Konečné stádium projektu je momentálně celkem nedodělané na můj vkus. Některé funkce byly udělané narychlo a nefungují dobře. Mám v plánu projekt trochu poopravit do budoucna, ale zatím stojí jako jeden z nejvíce solidních projektů, co jsem zatím napsal. Ne nadarmo funguje pravidlo 80/20."
+                    },
+                    {
+                        title: "SimpleReserve",
+                        text: "<img class='additional-info-img' src='img/projects-simplereserve.webp'> SimpleReserve je rezervační systém pro malé a střední podnikatele. Slouží profesím jako je kadeřník, holič, automechanik, masér apod. Tento projekt jsme vyvýjeli ve spolupraci s kolegou z Crudex.cz; Tento projekt se bohužel nedodělal z časových důvodů. Ale základní verzi, která funguje jsme již měli."
+                    },
+                    {
+                        title: "TeacherStalker",
+                        text: "<img class='additional-info-img' src='img/projects-teacherstalker.webp'> TeacherStalker se stal větším projeketem, než jsem původně zamýšlel. Jak je z názvu patrné, tento nástroj funguje jako ta kouzelná mapka z Harryho Pottera. Naštěstí nesleduje přesnou polohu lidí, ale dokáže ji celkem dost dobře odhadnout. Tato appka se napojí na školní systém Bakaláři a stáhne rozvrh každého učitele na danný týden. Ze staženého rozvrhu pak převede data do čitelnější podoby a zobrazí je v aplikaci. Tudíž se člověk následně může podívat, kde je jaký učitel v jakémkoliv čase. Později jsem přidal i více filtrů (učitelé, třídy, dny a hodiny, patra budovy). A pokud bych chtěl udělat tuto aplikaci fakt šíleně silnou, tak jsem tam mohl zakomponovat i žáky, ale to už si myslím, že by bylo moc práce proti užitku. Nejlepší na tom je to, že se nejedná o nic proti školnímu řádu. Pouze jsem sbíral informace veřejně dostupné všem lidem/žákům a překonvertoval jsem je do použitelného nástroje."
+                    },
+                    {
+                        title: "morse.fun",
+                        text: "<img class='additional-info-img' src='img/projects-morse.webp'> Tento projekt má menší krásný příběh. Jako malý jsem chodil do skauta a podmínkou k splnění nováčkovské zkoušky u vyššího oddílu bylo umět morseovku. Samozřejmě jsem morseovku nikdy neuměl a nikdy jsem se jí nenaučil, jelikož nebyla potřeba. Po pár letech mě dohnalo svědomí v dospělosti a rozhodl jsem se, že se morseovku naučím. Chtěl jsem pohodlné řešení, které bude lehce použitelné. Tudíž podmínkou byla mobilní responzivita a nulové reklamy. Hledal jsem nějakou dobrou aplikaci na appstoru, jelikož v době, co jsem tuto aplikaci potřeboval, jsem vlastnil iPhone SE 2020. Ale zaboha jsem nemohl nic najít. A proto mě napadla jediná logická věc. Naprogramovat vlastní appku.<br><br>Aplikace disponuje hlavní funkcí a to psaním morseovky a opisováním věty. Přídavné funkce, které jsem zatím přidal je žebříček hráčů a tudíž i uživatelský systém. Kritéria jsou počet vyřešených vět, chybovost a čas, za jak dlouho byla danná věta vyřešena. Všechny věty jsou podobně dlouhé a obsahují skoro všechny znaky abecedy."
+                    },
+                    {
+                        title: "LamaTaxi",
+                        text: "<img class='additional-info-img' src='img/projects-lamataxi.webp'> LamaTaxi je jedním z největších projektů, které jsem programoval. Jedná se o aplikaci pro místní taxi službu. Obsahuje kompletní stack služeb. Mobilní aplikaci, webový dashboard a statický web. Skrze aplikaci si mohou zákazníci objednat taxislužbu, kde se jim zobrazí výpočet ceny a odhadovaný čas, jak dlouho bude cesta trvat. Řidič aplikaci také používá a v aplikaci se mu zobrazují poptávky na službu. Ve webovém dashboardu je veškerá administrace. CRUD uživatelů, manuální dispečink, statistiky apod. <br><br> Na tomto projektu jsem spolupracoval s mým kolegou z Crudex.cz; Projekt nás hodně naučil. Naučili jsem se jak fungují platby kartou, jak funguje posílání SMS, geolokace, deploy aplikace na Google Play a Appstore."
+                    },
+                    {
+                        title: "Fotografování",
+                        text: "Ve svém volném čase se věnuji fotografování. Primárně se momentálně soustředím na auta, přířodu a semtam nějaký člověk taky přijde. Všechny mé fotky, co za něco stojí můžete vidět na mém <a href='https://instagram.com/kubatphoto' target='_blank'>instagramovém profilu</a>. Některé fotky přidávám i sem na web v sekci <a href='photography.html'>Fotografie</a>."
+                    },
+                ];
+
+                // Update additional info box content based on clicked item
+                additionalInfoTitle.textContent = content[index].title;
+                additionalInfoContent.innerHTML = content[index].text.replace(/\n/g, '<br>');
+
+                // Show additional info box
+                additionalInfo.classList.add('show');
+            });
+        });
+    });
+</script>
 </body>
 </html>
