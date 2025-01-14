@@ -348,7 +348,7 @@ a {
 }
 
 .additional-info {
-    display: none;
+    display: block;
     padding: 20px;
     border: 1px solid var(--primary);
     box-shadow: 5px 5px 0px 5px rgba(255,0,0,1);
