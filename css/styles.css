@@ -188,6 +188,12 @@ a {
 
 }
 
+#portfolio-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 #exp-wrapper {
     align-self: center;
 }
@@ -447,6 +453,15 @@ a {
         flex: 1 1 100%; /* Ensures three cards per row */
         display: flex; /* Make sure content inside stretches */
         flex-direction: column;
+    }
+
+    #portfolio-card-content span {
+        font-size: 16px;
+        color: #afafaf;
+        border: 1px solid #afafaf;
+        border-radius: 6px;
+        padding: 4px;
+        align-self: flex-start;
     }
 
     #contact {
