@@ -416,6 +416,11 @@ a {
         justify-content: center;
     }
 
+    #footer {
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+
     #header-wrapper {
         display: flex;
         flex-direction: column;
@@ -434,18 +439,22 @@ a {
     
     #portfolio-card {
         max-width: 100%;
-        min-width: 30%;
+        min-width: 51%;
         background-color: #1a1a1a;
         border-radius: 6px;
         box-shadow: 0px 0px 25px 2px rgb(255, 255, 255);
         margin-bottom: 32px;
-        
+        flex: 1 1 100%; /* Ensures three cards per row */
         display: flex; /* Make sure content inside stretches */
         flex-direction: column;
     }
 
     #contact {
         width: auto;
+    }
+
+    #contact > p {
+        font-size: 24px;
     }
 
     .project {
