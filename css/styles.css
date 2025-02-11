@@ -264,6 +264,10 @@ a {
     text-align: justify;
 }
 
+.about-me-content ul {
+    font-size: larger;
+}
+
 #contact {
     width: 70vw;
     align-self: center;

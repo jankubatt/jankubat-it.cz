@@ -64,7 +64,7 @@
             <div id="header">
                 <h1>Já jsem <span>Jan Kubát</span></h1>
                 <h2>Webový vývojář.
-                    Prohlédněte si mou cestu <span id="experience-year"></span> lety praxe.</h2>
+                    Prohlédněte si mou cestu <span id="experience-year"></span> lety zkušeností.</h2>
                 <div id="header-cta">
                     <a href="contact.html" class="btn btn-primary">Napište mi</a>
                 </div>
@@ -161,7 +161,7 @@
                     <img src="img/skodax.webp" alt="">
 
                     <div>
-                        <h3>Škoda X</h3>
+                        <h3><a href="https://skoda-x.cz/" target="_blank">Škoda X</a></h3>
                         <p>Junior Web Developer</p>
                         <p><span id="skodax"></span></p>
                         <p><span id="skodax-time"></span></p>
@@ -174,7 +174,7 @@
                     <img src="img/crudex.webp" alt="">
 
                     <div>
-                        <h3>Crudex</h3>
+                        <h3><a href="https://crudex.cz/" target="_blank">Crudex</a></h3>
                         <p>Fullstack Web Developer</p>
                         <p><span id="crudex"></span></p>
                         <p><span id="crudex-time"></span></p>
@@ -187,7 +187,7 @@
                     <img src="img/nfctron.webp" alt="">
 
                     <div>
-                        <h3>NFCtron</h3>
+                        <h3><a href="https://nfctron.cz/" target="_blank">NFCtron</a></h3>
                         <p>Backend Developer</p>
                         <p><span id="nfctron"></span></p>
                         <p><span id="nfctron-time"></span></p>
@@ -213,16 +213,14 @@
             <h2>O mně</h2>
             
             <div class="about-me-content">
-                <p>
-                    Jmenuji se Jan Kubát. Živím se výhradně vývojem a tvorbou webových aplikací. Moje cesta programátora začala již na základní škole, 
-                    kde jsem na gymplu chodil do kroužků a doma si sám programoval v C#. Po základní škole 
-                    jsem věděl, že chci studovat IT. Šel jsem na SPSUL v Ústí nad Labem. V době studia
-                     na této škole jsem se zůčastnil dobrého počtu soutěží (<a href="https://www.talentovani.cz/souteze/soutez-v-programovani">MŠMT</a>, 
-                     <a href="https://netacad-games.cz/index.php?id=kategorie-iot">NaG IoT</a>). Absolvoval 
-                     jsem 2 praxe. První v Praze u <a href="https://www.nfctron.com/cs/">NFCtronu</a> a druhou u <a href="https://km21.cz/">KM21 s.r.o.</a> 
-                     Tyto praxe mi daly mnoho zkušeností a poznatků k sobě samému. Za což zmíněným fírmám děkuji. Nakonec 
-                     jsem úspěšně odmaturoval s vyznamenáním. Momentálně pracuji jako Web Developer ve firmě <a href="https://www.skodax.cz/">Škoda X</a>.
-                </p>
+                <ul>
+                    <li><span id="age"></span> let</li>
+                    <li>Czechia</li>
+                    <li>Maturitní vzdělání</li>
+                    <li>Software Engineer</li>
+                    <li>NextJS, NodeJS, SQL</li>
+                    <li>Soutěže <a href="https://www.talentovani.cz/souteze/soutez-v-programovani">MŠMT</a>, <a href="https://netacad-games.cz/index.php?id=kategorie-iot">NaG IoT</a></li>
+                </ul>
             </div>
         </div>
 
@@ -255,6 +253,7 @@
     <script>
         var year = new Date().getFullYear() - 2017;
         document.getElementById("experience-year").innerText = year;
+        document.getElementById("age").innerText = new Date().getFullYear() - 2004;
 
         document.getElementById("skodax").innerText = expLength(new Date(2024, 4, 10), new Date());
         document.getElementById("skodax-time").innerText = expTime(new Date(2024, 4, 10), new Date());
