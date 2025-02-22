@@ -315,7 +315,7 @@ a {
 .projects-container {
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 40px;
     margin: 0 10em;
 }
 
@@ -328,6 +328,7 @@ a {
     height: 15em;
     display: flex;
     flex-direction: row;
+    gap: 16px;
 }
 
 .project-image {

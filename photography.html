@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2DZYERJXFW"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-2DZYERJXFW');
-    </script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2DZYERJXFW"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
     
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--Icon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-    <link rel="manifest" href="favicons/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Fotografie">
-    <meta name="description" content="Fotografické portfolio Jana Kubáta.">
-    <meta name="keywords" content="Jan Kubat, portfolio, github, Honza Kubat, developer, code, blog, kubat jan, kubat honza, kubat, jan, web, osobní">
-    <meta name="author" content="Jan Kubat">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jankubat-it.cz/">
-    <meta property="og:site_name" content="jankubat-it.cz">
-    <meta property="og:title" content="Jan Kubát - Fotografie">
-    <meta property="og:description" content="Fotografické portfolio Jana Kubáta.">
-    <meta property="og:image" content="https://jankubat-it.cz/img/og.webp">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://jankubat-it.cz/">
-    <meta property="twitter:title" content="Jan Kubát - Fotografie">
-    <meta property="twitter:description" content="Fotografické portfolio Jana Kubáta.">
-    <meta property="twitter:image" content="https://jankubat-it.cz/img/og.webp">
-
-    <link rel="stylesheet" href="/css/styles.css">
-
-    <script src="https://kit.fontawesome.com/848da1e5f7.js" crossorigin="anonymous"></script>
+            gtag('config', 'G-2DZYERJXFW');
+        </script>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--Icon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#ffffff">
+    
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Jan Kubát - Webový vývojář">
+        <meta name="description" content="Prohlédněte si mé osobní webové portfolio. Najdete zde mé projekty a kontaktní údaje.">
+        <meta name="keywords" content="Jan Kubat, portfolio, github, Honza Kubat, developer, code, blog, kubat jan, kubat honza, kubat, jan, web, osobní">
+        <meta name="author" content="Jan Kubat">
+        <meta name="robots" content="index, follow">
+    
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://jankubat.eu/">
+        <meta property="og:site_name" content="jankubat.eu">
+        <meta property="og:title" content="Jan Kubát - Webový vývojář">
+        <meta property="og:description" content="Prohlédněte si mé osobní webové portfolio. Najdete zde mé projekty a kontaktní údaje.">
+        <meta property="og:image" content="https://jankubat.eu/img/og.webp">
+    
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://jankubat.eu/">
+        <meta property="twitter:title" content="Jan Kubát - Webový vývojář">
+        <meta property="twitter:description" content="Prohlédněte si mé osobní webové portfolio. Najdete zde mé projekty a kontaktní údaje.">
+        <meta property="twitter:image" content="https://jankubat.eu/img/og.webp">
+    
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/line.css">
+    
+        <script src="https://kit.fontawesome.com/848da1e5f7.js" crossorigin="anonymous"></script>
 
     <title>Fotografie</title>
 </head>
@@ -55,7 +56,6 @@
         <a href="index.html">Domů</a>
         <a href="projects.html">Projekty</a>
         <a href="photography.html">Fotografie</a>
-        <a href="contact.html">Kontakt</a>
         <a href="https://github.com/jankubatt" target="_blank">Github</a>
     </div>
     <div id="">
@@ -91,20 +91,26 @@
        
 
         <div id="footer">
-            <p>© 2023 Jan Kubát</p>
+            <p>© <span id="copyrightYear"></span> Jan Kubát</p>
 
             <div id="footer-social">
                 <a href="https://www.linkedin.com/in/jankubatt/"><i class="fa-brands fa-linkedin"></i> jankubatt</a>
                 <a href="https://github.com/jankubatt"><i class="fa-brands fa-github"></i> jankubatt</a>
-                <a><i class="fa-brands fa-discord"></i> morpheusstathis</a>
             </div>
 
             <div id="footer-nav">
                 <a href="projects.html">Projekty</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Kontakt</a>
+                <a href="index.html#contact">Kontakt</a>
             </div>
         </div>
     </div>
+
+    <script>
+        var copyrightYear = document.getElementById("copyrightYear");
+        var date = new Date();
+        var year = date.getFullYear();
+
+        copyrightYear.innerHTML = year;
+    </script>
 </body>
 </html>
